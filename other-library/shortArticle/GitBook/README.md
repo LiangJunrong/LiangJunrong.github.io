@@ -2,7 +2,7 @@ GitBook
 ===
 
 > Create by **jsliang** on **2019-05-20 14:43:41**  
-> Recently revised in **2019-05-20 14:43:44**
+> Recently revised in **2019-05-20 17:08:30**
 
 本文将介绍如何安装 GitBook、如何起 GitBook 服务、如何配置 GitBook，以及到最后的部署到 GitHub Pages 或者部署到个人云服务器。
 
