@@ -359,7 +359,7 @@ const getConfirmation = (message, callback) => {
 * `hash`: 放入网址的 `hash`，例如 `#a-hash`。
 * `state`: 状态持续到 `location`。
 
-```js
+```jsx
 <Link to={{
   pathname: '/courses',          // 基础路径
   search: '?sort=name',          // 匹配字段
