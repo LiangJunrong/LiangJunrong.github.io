@@ -1,0 +1,3503 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>React Demo One - TodoList ✔ · jsliang 的文档库</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="梁峻荣 - jsliang">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../public-repertory/css/gitbook-configure.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="React-demo-two-TodoList-upgrade.html" />
+    
+    
+    <link rel="prev" href="React-list-React-Router.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"LiangJunrong","repo":"document-library","type":"star","count":true,"size":"small"},{"user":"LiangJunrong","width":"160","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    起始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../SUMMARY.html">
+            
+                <a href="../../SUMMARY.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../News.html">
+            
+                <a href="../../News.html">
+            
+                    
+                    更新记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../MessageBoard.html">
+            
+                <a href="../../MessageBoard.html">
+            
+                    
+                    留言板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../CSS-library/">
+            
+                <a href="../../CSS-library/">
+            
+                    
+                    CSS 资料室
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../CSS-library/CSS-base/">
+            
+                <a href="../../CSS-library/CSS-base/">
+            
+                    
+                    CSS 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../../CSS-library/CSS-base/CSS-reset.html">
+            
+                <a href="../../CSS-library/CSS-base/CSS-reset.html">
+            
+                    
+                    CSS 重置 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../CSS-library/layout/">
+            
+                <a href="../../CSS-library/layout/">
+            
+                    
+                    CSS 布局
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../../CSS-library/layout/Flex.html">
+            
+                <a href="../../CSS-library/layout/Flex.html">
+            
+                    
+                    Flex 布局 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../HTML-library/">
+            
+                <a href="../../HTML-library/">
+            
+                    
+                    HTML 资料室
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    JavaScript 资料室
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../JavaScript/">
+            
+                <a href="../JavaScript/">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../JavaScript/Function/">
+            
+                <a href="../JavaScript/Function/">
+            
+                    
+                    Function
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1.1" data-path="../JavaScript/Function/indexOf.html">
+            
+                <a href="../JavaScript/Function/indexOf.html">
+            
+                    
+                    方法 - indexOf() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.2" data-path="../JavaScript/Function/map.html">
+            
+                <a href="../JavaScript/Function/map.html">
+            
+                    
+                    方法 - map() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.3" data-path="../JavaScript/Function/pop.html">
+            
+                <a href="../JavaScript/Function/pop.html">
+            
+                    
+                    方法 - pop() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.4" data-path="../JavaScript/Function/sort.html">
+            
+                <a href="../JavaScript/Function/sort.html">
+            
+                    
+                    方法 - sort() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.5" data-path="../JavaScript/Function/split.html">
+            
+                <a href="../JavaScript/Function/split.html">
+            
+                    
+                    方法 - split() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2" data-path="../JavaScript/Object/">
+            
+                <a href="../JavaScript/Object/">
+            
+                    
+                    Object
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.2.1" data-path="../JavaScript/Object/Map.html">
+            
+                <a href="../JavaScript/Object/Map.html">
+            
+                    
+                    对象 - Map ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2.2" data-path="../JavaScript/Object/Math.html">
+            
+                <a href="../JavaScript/Object/Math.html">
+            
+                    
+                    对象 - Math ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2.3" data-path="../JavaScript/Object/Number.html">
+            
+                <a href="../JavaScript/Object/Number.html">
+            
+                    
+                    对象 - Number ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2.4" data-path="../JavaScript/Object/String.html">
+            
+                <a href="../JavaScript/Object/String.html">
+            
+                    
+                    对象 - String ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.3" data-path="../JavaScript/Other/">
+            
+                <a href="../JavaScript/Other/">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.3.1" data-path="../JavaScript/Other/DeleteArrrayItem.html">
+            
+                <a href="../JavaScript/Other/DeleteArrrayItem.html">
+            
+                    
+                    删除数组项目的技巧 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.3.2" data-path="../JavaScript/Other/Promise.html">
+            
+                <a href="../JavaScript/Other/Promise.html">
+            
+                    
+                    ES6学习 - 1 - Promise ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.3.3" data-path="../JavaScript/Other/prototype&constructor.html">
+            
+                <a href="../JavaScript/Other/prototype&constructor.html">
+            
+                    
+                    JavaScript 之 构造函数与原型对象 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../jQuery/">
+            
+                <a href="../jQuery/">
+            
+                    
+                    jQuery
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../jQuery/jQuery-base.html">
+            
+                <a href="../jQuery/jQuery-base.html">
+            
+                    
+                    jQuery 基础 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="../jQuery/jQuery-frequently-used.html">
+            
+                <a href="../jQuery/jQuery-frequently-used.html">
+            
+                    
+                    jQuery 工作常用解决方案 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Vue/">
+            
+                <a href="../Vue/">
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="../Vue/Vue-base.html">
+            
+                <a href="../Vue/Vue-base.html">
+            
+                    
+                    Vue 基础 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.2" data-path="../Vue/Vue-official-documents.html">
+            
+                <a href="../Vue/Vue-official-documents.html">
+            
+                    
+                    Vue 官方文档二三事 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.3" data-path="../Vue/Vue-prepare.html">
+            
+                <a href="../Vue/Vue-prepare.html">
+            
+                    
+                    Vue 开发准备 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.4" data-path="../Vue/Axios.html">
+            
+                <a href="../Vue/Axios.html">
+            
+                    
+                    Axios ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.5" data-path="../Vue/Vue-Router.html">
+            
+                <a href="../Vue/Vue-Router.html">
+            
+                    
+                    Vue Router ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.6" data-path="../Vue/Vue-upload-file.html">
+            
+                <a href="../Vue/Vue-upload-file.html">
+            
+                    
+                    Vue 上传文件 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.7" data-path="../Vue/Vue-deployment-optimization.html">
+            
+                <a href="../Vue/Vue-deployment-optimization.html">
+            
+                    
+                    Vue 部署优化 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.8" data-path="../Vue/Vue-demo-one.html">
+            
+                <a href="../Vue/Vue-demo-one.html">
+            
+                    
+                    Vue Demo One - 功成千骨 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.9" data-path="../Vue/Vue-demo-two.html">
+            
+                <a href="../Vue/Vue-demo-two.html">
+            
+                    
+                    Vue Demo Two - 创意网站 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.4.1" data-path="React-base.html">
+            
+                <a href="React-base.html">
+            
+                    
+                    React 基础 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.2" data-path="React-prepare.html">
+            
+                <a href="React-prepare.html">
+            
+                    
+                    React 开发准备 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.3" data-path="React-list.html">
+            
+                <a href="React-list.html">
+            
+                    
+                    React 知识点清单 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.4" data-path="React-list-Create-React-App.html">
+            
+                <a href="React-list-Create-React-App.html">
+            
+                    
+                    React List - Create React App ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.5" data-path="React-list-React-Redux.html">
+            
+                <a href="React-list-React-Redux.html">
+            
+                    
+                    React List - React Redux ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.6" data-path="React-list-React-Router.html">
+            
+                <a href="React-list-React-Router.html">
+            
+                    
+                    React List - React Router ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.4.7" data-path="React-demo-one-TodoList.html">
+            
+                <a href="React-demo-one-TodoList.html">
+            
+                    
+                    React Demo One - TodoList ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.8" data-path="React-demo-two-TodoList-upgrade.html">
+            
+                <a href="React-demo-two-TodoList-upgrade.html">
+            
+                    
+                    React Demo Two - TodoList 升级 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.9" data-path="React-demo-three-JianShu.html">
+            
+                <a href="React-demo-three-JianShu.html">
+            
+                    
+                    React Demo Three - 简书 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.10" data-path="React-demo-four-JueJin.html">
+            
+                <a href="React-demo-four-JueJin.html">
+            
+                    
+                    React Demo Four - 掘金 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.11" data-path="React-demo-five-RegionalCircle.html">
+            
+                <a href="React-demo-five-RegionalCircle.html">
+            
+                    
+                    React Demo Five - 员岗周边 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../Angular/">
+            
+                <a href="../Angular/">
+            
+                    
+                    Angular
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.5.1" data-path="../Angular/Angular-demo-one-Taskmgr.html">
+            
+                <a href="../Angular/Angular-demo-one-Taskmgr.html">
+            
+                    
+                    Angular Demo One - 打造企业级协作平台 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.2" data-path="../Angular/Angular-demo-two-StockManagementPlatform.html">
+            
+                <a href="../Angular/Angular-demo-two-StockManagementPlatform.html">
+            
+                    
+                    Angular Demo Two - 股票管理平台 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../ECharts/">
+            
+                <a href="../ECharts/">
+            
+                    
+                    ECharts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.6.1" data-path="../ECharts/curriculum-vitae.html">
+            
+                <a href="../ECharts/curriculum-vitae.html">
+            
+                    
+                    ECharts 打造在线个人简历 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2" data-path="../ECharts/curriculum-vitae-improve.html">
+            
+                <a href="../ECharts/curriculum-vitae-improve.html">
+            
+                    
+                    ECharts 打造在线个人简历 【升级版】 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.3" data-path="../ECharts/ECharts-Vue.html">
+            
+                <a href="../ECharts/ECharts-Vue.html">
+            
+                    
+                    ECharts + Vue 折腾记 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../design-pattern/">
+            
+                <a href="../design-pattern/">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.7.1" data-path="../design-pattern/design-pattern-chapter01.html">
+            
+                <a href="../design-pattern/design-pattern-chapter01.html">
+            
+                    
+                    设计模式手册 - 1 - 部署开发环境 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7.2" data-path="../design-pattern/design-pattern-chapter02.html">
+            
+                <a href="../design-pattern/design-pattern-chapter02.html">
+            
+                    
+                    设计模式手册 - 2 - 面向对象 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7.3" data-path="../design-pattern/design-pattern-chapter03.html">
+            
+                <a href="../design-pattern/design-pattern-chapter03.html">
+            
+                    
+                    设计模式手册 - 3 - 工厂模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7.4" data-path="../design-pattern/design-pattern-chapter04.html">
+            
+                <a href="../design-pattern/design-pattern-chapter04.html">
+            
+                    
+                    设计模式手册 - 4 - 单例模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7.5" data-path="../design-pattern/design-pattern-chapter05.html">
+            
+                <a href="../design-pattern/design-pattern-chapter05.html">
+            
+                    
+                    设计模式手册 - 5 - 适配器模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7.6" data-path="../design-pattern/design-pattern-chapter06.html">
+            
+                <a href="../design-pattern/design-pattern-chapter06.html">
+            
+                    
+                    设计模式手册 - 6 - 装饰器模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7.7" data-path="../design-pattern/design-pattern-chapter07.html">
+            
+                <a href="../design-pattern/design-pattern-chapter07.html">
+            
+                    
+                    设计模式手册 - 7 - 代理模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7.8" data-path="../design-pattern/design-pattern-chapter08.html">
+            
+                <a href="../design-pattern/design-pattern-chapter08.html">
+            
+                    
+                    设计模式手册 - 8 - 外观模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7.9" data-path="../design-pattern/design-pattern-chapter09.html">
+            
+                <a href="../design-pattern/design-pattern-chapter09.html">
+            
+                    
+                    设计模式手册 - 9 - 观察者模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7.10" data-path="../design-pattern/design-pattern-chapter10.html">
+            
+                <a href="../design-pattern/design-pattern-chapter10.html">
+            
+                    
+                    设计模式手册 - 10 - 迭代器模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7.11" data-path="../design-pattern/design-pattern-chapter11.html">
+            
+                <a href="../design-pattern/design-pattern-chapter11.html">
+            
+                    
+                    设计模式手册 - 11 - 状态模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7.12" data-path="../design-pattern/design-pattern-chapter12.html">
+            
+                <a href="../design-pattern/design-pattern-chapter12.html">
+            
+                    
+                    设计模式手册 - 12 - 其他模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7.13" data-path="../design-pattern/design-pattern-chapter13.html">
+            
+                <a href="../design-pattern/design-pattern-chapter13.html">
+            
+                    
+                    设计模式手册 - 13 - 综合应用 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../other-library/">
+            
+                <a href="../../other-library/">
+            
+                    
+                    其他资料室
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../other-library/Git/">
+            
+                <a href="../../other-library/Git/">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.1" data-path="../../other-library/Git/Git-study.html">
+            
+                <a href="../../other-library/Git/Git-study.html">
+            
+                    
+                    Git 学习 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../other-library/HTTP/">
+            
+                <a href="../../other-library/HTTP/">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.2.1" data-path="../../other-library/HTTP/HTTP-study.html">
+            
+                <a href="../../other-library/HTTP/HTTP-study.html">
+            
+                    
+                    HTTP 学习 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../other-library/interview/">
+            
+                <a href="../../other-library/interview/">
+            
+                    
+                    面试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1" data-path="../../other-library/interview/hearsay/">
+            
+                <a href="../../other-library/interview/hearsay/">
+            
+                    
+                    面试 - 道听途说
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1.1" data-path="../../other-library/interview/hearsay/interview-one.html">
+            
+                <a href="../../other-library/interview/hearsay/interview-one.html">
+            
+                    
+                    第一篇 - 阿里系公司第一轮电面题 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2" data-path="../../other-library/interview/personal-experience/">
+            
+                <a href="../../other-library/interview/personal-experience/">
+            
+                    
+                    面试 - 亲身经历
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.2.1" data-path="../../other-library/interview/personal-experience/2019-interview-preparation.html">
+            
+                <a href="../../other-library/interview/personal-experience/2019-interview-preparation.html">
+            
+                    
+                    jsliang 的 2019 面试准备 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2.2" data-path="../../other-library/interview/personal-experience/2019-practical-round-one.html">
+            
+                <a href="../../other-library/interview/personal-experience/2019-practical-round-one.html">
+            
+                    
+                    2019 面试实战 - Round One ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2.3" data-path="../../other-library/interview/personal-experience/2019-practical-round-two.html">
+            
+                <a href="../../other-library/interview/personal-experience/2019-practical-round-two.html">
+            
+                    
+                    2019 面试实战 - Round Two ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2.4" data-path="../../other-library/interview/personal-experience/2019-practical-round-three.html">
+            
+                <a href="../../other-library/interview/personal-experience/2019-practical-round-three.html">
+            
+                    
+                    2019 面试实战 - Round Three ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2.5" data-path="../../other-library/interview/personal-experience/JavaScript-原型与原型链.html">
+            
+                <a href="../../other-library/interview/personal-experience/JavaScript-原型与原型链.html">
+            
+                    
+                    面试知识点 - JS 原型与原型链 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2.6" data-path="../../other-library/interview/personal-experience/JavaScript-防抖与节流.html">
+            
+                <a href="../../other-library/interview/personal-experience/JavaScript-防抖与节流.html">
+            
+                    
+                    面试知识点 - JS 防抖与节流 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2.7" data-path="../../other-library/interview/personal-experience/other-图片.html">
+            
+                <a href="../../other-library/interview/personal-experience/other-图片.html">
+            
+                    
+                    面试知识点 - 图片 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../other-library/LeetCode/">
+            
+                <a href="../../other-library/LeetCode/">
+            
+                    
+                    LeetCode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.4.1" data-path="../../other-library/LeetCode/easy/">
+            
+                <a href="../../other-library/LeetCode/easy/">
+            
+                    
+                    LeetCode - 简单模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.4.1.1" data-path="../../other-library/LeetCode/easy/001-两数之和（two-sum）.html">
+            
+                <a href="../../other-library/LeetCode/easy/001-两数之和（two-sum）.html">
+            
+                    
+                    001 - 两数之和（two-sum） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.1.2" data-path="../../other-library/LeetCode/easy/007-整数反转（reverse-integer）.html">
+            
+                <a href="../../other-library/LeetCode/easy/007-整数反转（reverse-integer）.html">
+            
+                    
+                    007 - 整数反转（reverse-integer） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.1.3" data-path="../../other-library/LeetCode/easy/009-回文数（palindrome-number）.html">
+            
+                <a href="../../other-library/LeetCode/easy/009-回文数（palindrome-number）.html">
+            
+                    
+                    009 - 回文数（palindrome-number） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.1.4" data-path="../../other-library/LeetCode/easy/013-罗马数字转整数（roman-to-integer）.html">
+            
+                <a href="../../other-library/LeetCode/easy/013-罗马数字转整数（roman-to-integer）.html">
+            
+                    
+                    013 - 罗马数字转整数（roman-to-integer） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.2" data-path="../../other-library/LeetCode/medium/">
+            
+                <a href="../../other-library/LeetCode/medium/">
+            
+                    
+                    LeetCode - 中等模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.3" data-path="../../other-library/LeetCode/hard/">
+            
+                <a href="../../other-library/LeetCode/hard/">
+            
+                    
+                    LeetCode - 困难模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../../other-library/Markdown-Websites/">
+            
+                <a href="../../other-library/Markdown-Websites/">
+            
+                    
+                    Markdown 建站
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.5.1" data-path="../../other-library/Markdown-Websites/Markdown/">
+            
+                <a href="../../other-library/Markdown-Websites/Markdown/">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.5.1.1" data-path="../../other-library/Markdown-Websites/Markdown/Markdown-study.html">
+            
+                <a href="../../other-library/Markdown-Websites/Markdown/Markdown-study.html">
+            
+                    
+                    Markdown 学习 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5.2" data-path="../../other-library/Markdown-Websites/GitHub-Pages/">
+            
+                <a href="../../other-library/Markdown-Websites/GitHub-Pages/">
+            
+                    
+                    GitHub Pages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.5.2.1" data-path="../../other-library/Markdown-Websites/GitHub-Pages/GitHub-Pages-study.html">
+            
+                <a href="../../other-library/Markdown-Websites/GitHub-Pages/GitHub-Pages-study.html">
+            
+                    
+                    GitHub Pages 学习 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5.3" data-path="../../other-library/Markdown-Websites/VuePress/">
+            
+                <a href="../../other-library/Markdown-Websites/VuePress/">
+            
+                    
+                    VuePress
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.5.3.1" data-path="../../other-library/Markdown-Websites/VuePress/VuePress-study.html">
+            
+                <a href="../../other-library/Markdown-Websites/VuePress/VuePress-study.html">
+            
+                    
+                    VuePress 学习 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5.4" data-path="../../other-library/Markdown-Websites/GitBook/">
+            
+                <a href="../../other-library/Markdown-Websites/GitBook/">
+            
+                    
+                    GitBook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.5.4.1" data-path="../../other-library/Markdown-Websites/GitBook/GitBook-study.html">
+            
+                <a href="../../other-library/Markdown-Websites/GitBook/GitBook-study.html">
+            
+                    
+                    GitBook 搭建 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5.4.2" data-path="../../other-library/Markdown-Websites/GitBook/GitBook-question.html">
+            
+                <a href="../../other-library/Markdown-Websites/GitBook/GitBook-question.html">
+            
+                    
+                    GitBook 开发问题记录 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../../other-library/Monologue/">
+            
+                <a href="../../other-library/Monologue/">
+            
+                    
+                    独白
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.6.1" data-path="../../other-library/Monologue/GitHubRunawayRace.html">
+            
+                <a href="../../other-library/Monologue/GitHubRunawayRace.html">
+            
+                    
+                    暴走前端 - GitHub 竞赛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6.2" data-path="../../other-library/Monologue/TheArtOfQuestioning.html">
+            
+                <a href="../../other-library/Monologue/TheArtOfQuestioning.html">
+            
+                    
+                    提问的艺术 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6.3" data-path="../../other-library/Monologue/稳食艰难.html">
+            
+                <a href="../../other-library/Monologue/稳食艰难.html">
+            
+                    
+                    稳食艰难 - 云服务器推广
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6.4" data-path="../../other-library/Monologue/MorningAndEvening/">
+            
+                <a href="../../other-library/Monologue/MorningAndEvening/">
+            
+                    
+                    朝花夕拾
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.6.4.1" data-path="../../other-library/Monologue/MorningAndEvening/2019-04-29.html">
+            
+                <a href="../../other-library/Monologue/MorningAndEvening/2019-04-29.html">
+            
+                    
+                    朝花夕拾 - 工作与生活 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6.4.2" data-path="../../other-library/Monologue/MorningAndEvening/2019-04-05.html">
+            
+                <a href="../../other-library/Monologue/MorningAndEvening/2019-04-05.html">
+            
+                    
+                    朝花夕拾 - 生日 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6.4.3" data-path="../../other-library/Monologue/MorningAndEvening/2019-03-31.html">
+            
+                <a href="../../other-library/Monologue/MorningAndEvening/2019-03-31.html">
+            
+                    
+                    朝花夕拾 - 徒步 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6.4.4" data-path="../../other-library/Monologue/MorningAndEvening/2019-03-22.html">
+            
+                <a href="../../other-library/Monologue/MorningAndEvening/2019-03-22.html">
+            
+                    
+                    朝花夕拾 - 搬家 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6.5" data-path="../../other-library/Monologue/Logs/">
+            
+                <a href="../../other-library/Monologue/Logs/">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.6.5.1" data-path="../../other-library/Monologue/Logs/2019-05.html">
+            
+                <a href="../../other-library/Monologue/Logs/2019-05.html">
+            
+                    
+                    日志 - 2019-05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6.5.2" data-path="../../other-library/Monologue/Logs/2019-04.html">
+            
+                <a href="../../other-library/Monologue/Logs/2019-04.html">
+            
+                    
+                    日志 - 2019-04 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6.5.3" data-path="../../other-library/Monologue/Logs/2018-11.html">
+            
+                <a href="../../other-library/Monologue/Logs/2018-11.html">
+            
+                    
+                    日志 - 2018-11 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../../other-library/Node/">
+            
+                <a href="../../other-library/Node/">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.7.1" data-path="../../other-library/Node/Koa.html">
+            
+                <a href="../../other-library/Node/Koa.html">
+            
+                    
+                    Koa ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7.2" data-path="../../other-library/Node/Node-base.html">
+            
+                <a href="../../other-library/Node/Node-base.html">
+            
+                    
+                    Node 基础 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7.3" data-path="../../other-library/Node/build-web-station.html">
+            
+                <a href="../../other-library/Node/build-web-station.html">
+            
+                    
+                    云服务器建站 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../../other-library/npm/">
+            
+                <a href="../../other-library/npm/">
+            
+                    
+                    npm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.8.1" data-path="../../other-library/npm/npm-study.html">
+            
+                <a href="../../other-library/npm/npm-study.html">
+            
+                    
+                    npm 学习 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../../other-library/regular-expression/">
+            
+                <a href="../../other-library/regular-expression/">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.9.1" data-path="../../other-library/regular-expression/regular-expression-study.html">
+            
+                <a href="../../other-library/regular-expression/regular-expression-study.html">
+            
+                    
+                    正则表达式学习 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../../other-library/short-article-library/">
+            
+                <a href="../../other-library/short-article-library/">
+            
+                    
+                    短杂文
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.10.1" data-path="../../other-library/short-article-library/agreement/">
+            
+                <a href="../../other-library/short-article-library/agreement/">
+            
+                    
+                    关于协议 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.2" data-path="../../other-library/short-article-library/front-end/">
+            
+                <a href="../../other-library/short-article-library/front-end/">
+            
+                    
+                    前端 ✔
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.10.2.1" data-path="../../other-library/short-article-library/front-end/front-end-2018-11.html">
+            
+                <a href="../../other-library/short-article-library/front-end/front-end-2018-11.html">
+            
+                    
+                    前端 - 2018 前端开发分享 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.2.2" data-path="../../other-library/short-article-library/front-end/front-end-solution.html">
+            
+                <a href="../../other-library/short-article-library/front-end/front-end-solution.html">
+            
+                    
+                    前端 - 前端解疑 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.2.3" data-path="../../other-library/short-article-library/front-end/front-end-understand.html">
+            
+                <a href="../../other-library/short-article-library/front-end/front-end-understand.html">
+            
+                    
+                    前端 - 浅谈个人对前端历史的理解 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.3" data-path="../../other-library/short-article-library/Java-about/">
+            
+                <a href="../../other-library/short-article-library/Java-about/">
+            
+                    
+                    Java ✔
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.10.3.1" data-path="../../other-library/short-article-library/Java-about/JSP/">
+            
+                <a href="../../other-library/short-article-library/Java-about/JSP/">
+            
+                    
+                    JSP ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.3.2" data-path="../../other-library/short-article-library/Java-about/JSTL/">
+            
+                <a href="../../other-library/short-article-library/Java-about/JSTL/">
+            
+                    
+                    JSTL ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.4" data-path="../../other-library/short-article-library/old-web-article/">
+            
+                <a href="../../other-library/short-article-library/old-web-article/">
+            
+                    
+                    旧网站 - ThinkPHP 建站的文章 ✔
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.10.4.1" data-path="../../other-library/short-article-library/old-web-article/01.html">
+            
+                <a href="../../other-library/short-article-library/old-web-article/01.html">
+            
+                    
+                    01 - 整站感言 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.4.2" data-path="../../other-library/short-article-library/old-web-article/02.html">
+            
+                <a href="../../other-library/short-article-library/old-web-article/02.html">
+            
+                    
+                    02 - 基于 ThinkPHP 和 bootstrap 的整站开发 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.4.3" data-path="../../other-library/short-article-library/old-web-article/03.html">
+            
+                <a href="../../other-library/short-article-library/old-web-article/03.html">
+            
+                    
+                    03 - HTML + CSS + JavaScript 基础学习 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.4.4" data-path="../../other-library/short-article-library/old-web-article/04.html">
+            
+                <a href="../../other-library/short-article-library/old-web-article/04.html">
+            
+                    
+                    04 - PHP 基础学习 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.4.5" data-path="../../other-library/short-article-library/old-web-article/05.html">
+            
+                <a href="../../other-library/short-article-library/old-web-article/05.html">
+            
+                    
+                    05 - Bootstrap 学习 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.4.6" data-path="../../other-library/short-article-library/old-web-article/06.html">
+            
+                <a href="../../other-library/short-article-library/old-web-article/06.html">
+            
+                    
+                    06 - ThinkPHP 学习 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.4.7" data-path="../../other-library/short-article-library/old-web-article/07.html">
+            
+                <a href="../../other-library/short-article-library/old-web-article/07.html">
+            
+                    
+                    07 - MySQL 学习 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.4.8" data-path="../../other-library/short-article-library/old-web-article/08.html">
+            
+                <a href="../../other-library/short-article-library/old-web-article/08.html">
+            
+                    
+                    08 - 下一站：vue ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.4.9" data-path="../../other-library/short-article-library/old-web-article/09.html">
+            
+                <a href="../../other-library/short-article-library/old-web-article/09.html">
+            
+                    
+                    09 - 心有所动，路有所行 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.4.10" data-path="../../other-library/short-article-library/old-web-article/10.html">
+            
+                <a href="../../other-library/short-article-library/old-web-article/10.html">
+            
+                    
+                    10 - Vue 第一站：从安装到打包 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.4.11" data-path="../../other-library/short-article-library/old-web-article/11.html">
+            
+                <a href="../../other-library/short-article-library/old-web-article/11.html">
+            
+                    
+                    11 - 给自己留一份感动 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.4.12" data-path="../../other-library/short-article-library/old-web-article/12.html">
+            
+                <a href="../../other-library/short-article-library/old-web-article/12.html">
+            
+                    
+                    12 - 4 步搞定简易 GIF 图 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.4.13" data-path="../../other-library/short-article-library/old-web-article/13.html">
+            
+                <a href="../../other-library/short-article-library/old-web-article/13.html">
+            
+                    
+                    13 - 菜鸟：世界太大，给自己留 50G 空间 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.4.14" data-path="../../other-library/short-article-library/old-web-article/14.html">
+            
+                <a href="../../other-library/short-article-library/old-web-article/14.html">
+            
+                    
+                    14 - 5 月心得 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.4.15" data-path="../../other-library/short-article-library/old-web-article/15.html">
+            
+                <a href="../../other-library/short-article-library/old-web-article/15.html">
+            
+                    
+                    15 - pug 模板引擎 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.4.16" data-path="../../other-library/short-article-library/old-web-article/16.html">
+            
+                <a href="../../other-library/short-article-library/old-web-article/16.html">
+            
+                    
+                    16 - 2017年10月10日 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.4.17" data-path="../../other-library/short-article-library/old-web-article/17.html">
+            
+                <a href="../../other-library/short-article-library/old-web-article/17.html">
+            
+                    
+                    17 - gulpUncss 清除样式 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.4.18" data-path="../../other-library/short-article-library/old-web-article/18.html">
+            
+                <a href="../../other-library/short-article-library/old-web-article/18.html">
+            
+                    
+                    18 - Vue 基础 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10.5" data-path="../../other-library/short-article-library/Visual-Studio-Code/">
+            
+                <a href="../../other-library/short-article-library/Visual-Studio-Code/">
+            
+                    
+                    VSCode 常用操作和配置 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../../other-library/SQL/">
+            
+                <a href="../../other-library/SQL/">
+            
+                    
+                    SQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.11.1" data-path="../../other-library/SQL/MySQL-install.html">
+            
+                <a href="../../other-library/SQL/MySQL-install.html">
+            
+                    
+                    MySQL 安装 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11.2" data-path="../../other-library/SQL/MySQL-study.html">
+            
+                <a href="../../other-library/SQL/MySQL-study.html">
+            
+                    
+                    MySQL 学习 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../../other-library/Website/">
+            
+                <a href="../../other-library/Website/">
+            
+                    
+                    网站
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.12.1" data-path="../../other-library/Website/Shopping-Mall.html">
+            
+                <a href="../../other-library/Website/Shopping-Mall.html">
+            
+                    
+                    Vue + Koa2 + MongoDB 搭建商城 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13" data-path="../../other-library/WeChat-applet/">
+            
+                <a href="../../other-library/WeChat-applet/">
+            
+                    
+                    微信小程序
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.13.1" data-path="../../other-library/WeChat-applet/WeChat-applet-development-process.html">
+            
+                <a href="../../other-library/WeChat-applet/WeChat-applet-development-process.html">
+            
+                    
+                    微信小程序开发流程 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13.2" data-path="../../other-library/WeChat-applet/WeChat-applet-bug-lists.html">
+            
+                <a href="../../other-library/WeChat-applet/WeChat-applet-bug-lists.html">
+            
+                    
+                    微信小程序 bug 集中营 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13.3" data-path="../../other-library/WeChat-applet/WeChat-applet-function-list.html">
+            
+                <a href="../../other-library/WeChat-applet/WeChat-applet-function-list.html">
+            
+                    
+                    微信小程序之奇技淫巧 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >React Demo One - TodoList ✔</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#react-demo-one---todolist"><b></b>React Demo One - TodoList</a></li><ul><li><span class="title-icon "></span><a href="#&#x4E00;-&#x76EE;&#x5F55;"><b></b>&#x4E00; &#x76EE;&#x5F55;</a></li><li><span class="title-icon "></span><a href="#&#x4E8C;-&#x524D;&#x8A00;"><b></b>&#x4E8C; &#x524D;&#x8A00;</a></li><li><span class="title-icon "></span><a href="#&#x4E09;-&#x6B63;&#x6587;"><b></b>&#x4E09; &#x6B63;&#x6587;</a></li><ul><li><span class="title-icon "></span><a href="#31-&#x65B0;&#x5EFA;-react-&#x9879;&#x76EE;"><b></b>3.1 &#x65B0;&#x5EFA; React &#x9879;&#x76EE;</a></li><li><span class="title-icon "></span><a href="#32-&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x89E3;&#x6790;"><b></b>3.2 &#x9879;&#x76EE;&#x76EE;&#x5F55;&#x89E3;&#x6790;</a></li><li><span class="title-icon "></span><a href="#33-&#x7CBE;&#x7B80;&#x9879;&#x76EE;&#x7ED3;&#x6784;"><b></b>3.3 &#x7CBE;&#x7B80;&#x9879;&#x76EE;&#x7ED3;&#x6784;</a></li><li><span class="title-icon "></span><a href="#34-&#x521D;&#x63A2;&#x7EC4;&#x4EF6;"><b></b>3.4 &#x521D;&#x63A2;&#x7EC4;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#35-jsx"><b></b>3.5 JSX</a></li><li><span class="title-icon "></span><a href="#36-&#x4E8B;&#x4EF6;&#x53CA;&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;"><b></b>3.6 &#x4E8B;&#x4EF6;&#x53CA;&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;</a></li><li><span class="title-icon "></span><a href="#37-&#x4F18;&#x5316;-&#x62BD;&#x53D6;-css"><b></b>3.7 &#x4F18;&#x5316;-&#x62BD;&#x53D6; CSS</a></li><li><span class="title-icon "></span><a href="#38-&#x4F18;&#x5316;-&#x62BD;&#x53D6;-js"><b></b>3.8 &#x4F18;&#x5316;-&#x62BD;&#x53D6; JS</a></li></ul><li><span class="title-icon "></span><a href="#&#x56DB;-&#x603B;&#x7ED3;"><b></b>&#x56DB; &#x603B;&#x7ED3;</a></li><li><span class="title-icon "></span><a href="#&#x4E94;-&#x53C2;&#x8003;&#x6587;&#x732E;"><b></b>&#x4E94; &#x53C2;&#x8003;&#x6587;&#x732E;</a></li></ul></ul></div><a href="#react-demo-one---todolist" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="react-demo-one---todolist"><a name="react-demo-one---todolist" class="anchor-navigation-ex-anchor" href="#react-demo-one---todolist"><i class="fa fa-link" aria-hidden="true"></i></a>React Demo One - TodoList</h1>
+<blockquote>
+<p>Create by <strong>jsliang</strong> on <strong>2019-3-18 08:37:10</strong><br>Recently revised in <strong>2019-05-31 15:05:26</strong></p>
+</blockquote>
+<p><strong>Hello &#x5C0F;&#x4F19;&#x4F34;&#x4EEC;&#xFF0C;&#x5982;&#x679C;&#x89C9;&#x5F97;&#x672C;&#x6587;&#x8FD8;&#x4E0D;&#x9519;&#xFF0C;&#x8BB0;&#x5F97;&#x7ED9;&#x4E2A; </strong>star<strong> &#xFF0C; &#x5C0F;&#x4F19;&#x4F34;&#x4EEC;&#x7684; </strong>star<strong> &#x662F;&#x6211;&#x6301;&#x7EED;&#x66F4;&#x65B0;&#x7684;&#x52A8;&#x529B;&#xFF01;<a href="https://github.com/LiangJunrong/document-library" target="_blank">GitHub &#x5730;&#x5740;</a></strong></p>
+<ul>
+<li><a href="https://github.com/LiangJunrong/React" target="_blank">React &#x7CFB;&#x5217;&#x6587;&#x7AE0;&#x4EE3;&#x7801;&#x5730;&#x5740;</a></li>
+</ul>
+<h2 id="&#x4E00;-&#x76EE;&#x5F55;"><a name="&#x4E00;-&#x76EE;&#x5F55;" class="anchor-navigation-ex-anchor" href="#&#x4E00;-&#x76EE;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-one" id="chapter-one">&#x4E00; &#x76EE;&#x5F55;</a></h2>
+<p><strong>&#x4E0D;&#x6298;&#x817E;&#x7684;&#x524D;&#x7AEF;&#xFF0C;&#x548C;&#x54B8;&#x9C7C;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x76EE;&#x5F55;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#chapter-one">&#x4E00; &#x76EE;&#x5F55;</a></td>
+</tr>
+<tr>
+<td><a name="catalog-chapter-two" id="catalog-chapter-two"></a><a href="#chapter-two">&#x4E8C; &#x524D;&#x8A00;</a></td>
+</tr>
+<tr>
+<td><a name="catalog-chapter-three" id="catalog-chapter-three"></a><a href="#chapter-three">&#x4E09; &#x6B63;&#x6587;</a></td>
+</tr>
+<tr>
+<td>&#x2003;<a href="#chapter-three-one">3.1 &#x65B0;&#x5EFA; React &#x9879;&#x76EE;</a></td>
+</tr>
+<tr>
+<td>&#x2003;<a href="#chapter-three-two">3.2 &#x9879;&#x76EE;&#x76EE;&#x5F55;&#x89E3;&#x6790;</a></td>
+</tr>
+<tr>
+<td>&#x2003;<a href="#chapter-three-three">3.3 &#x7CBE;&#x7B80;&#x9879;&#x76EE;&#x7ED3;&#x6784;</a></td>
+</tr>
+<tr>
+<td>&#x2003;<a href="#chapter-three-four">3.4 &#x521D;&#x63A2;&#x7EC4;&#x4EF6;</a></td>
+</tr>
+<tr>
+<td>&#x2003;<a href="#chapter-three-five">3.5 JSX</a></td>
+</tr>
+<tr>
+<td>&#x2003;<a href="#chapter-three-six">3.6 &#x4E8B;&#x4EF6;&#x53CA;&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;</a></td>
+</tr>
+<tr>
+<td>&#x2003;<a href="#chapter-three-seven">3.7 &#x4F18;&#x5316;-&#x62BD;&#x53D6; CSS</a></td>
+</tr>
+<tr>
+<td>&#x2003;<a href="#chapter-three-eight">3.8 &#x4F18;&#x5316;-&#x62BD;&#x53D6; JS</a></td>
+</tr>
+<tr>
+<td><a name="catalog-chapter-four" id="catalog-chapter-four"></a><a href="#chapter-four">&#x56DB; &#x603B;&#x7ED3;</a></td>
+</tr>
+<tr>
+<td><a name="catalog-chapter-five" id="catalog-chapter-five"></a><a href="#chapter-five">&#x4E94; &#x53C2;&#x8003;&#x6587;&#x732E;</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x4E8C;-&#x524D;&#x8A00;"><a name="&#x4E8C;-&#x524D;&#x8A00;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;-&#x524D;&#x8A00;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-two" id="chapter-two">&#x4E8C; &#x524D;&#x8A00;</a></h2>
+<blockquote>
+<p><a href="#chapter-one">&#x8FD4;&#x56DE;&#x76EE;&#x5F55;</a></p>
+</blockquote>
+<p>&#x5173;&#x4E8E; React&#xFF0C;<strong>jsliang</strong> &#x4ECE; <code>2018-9-5</code> &#x5C31;&#x5F00;&#x59CB;&#x6298;&#x817E;&#x4E86;&#xFF0C;&#x4E2D;&#x9014;&#x56E0;&#x4E3A;&#x5DE5;&#x4F5C;&#x8C03;&#x52A8;&#xFF0C;&#x6CA1;&#x80FD;&#x7EE7;&#x7EED;&#x6298;&#x817E;&#x4E0B;&#x53BB;&#x3002;&#x6700;&#x8FD1;&#x56E0;&#x4E3A;&#x65B0;&#x516C;&#x53F8;&#x5DE5;&#x4F5C;&#x9700;&#x6C42;&#xFF0C;&#x4ECE;&#x5934;&#x5F00;&#x59CB;&#x7EE7;&#x7EED;&#x6298;&#x817E; React&#xFF0C;&#x5E0C;&#x671B;&#x6211;&#x7684;&#x6587;&#x7AE0;&#x80FD;&#x5BF9;&#x6CA1;&#x5B66;&#x8FC7; React &#x6216;&#x8005;&#x521D;&#x5165; React &#x7684;&#x5C0F;&#x4F19;&#x4F34;&#x6709;&#x6240;&#x5E2E;&#x52A9;&#x3002;</p>
+<p>&#x672C;&#x6587;&#x53C2;&#x8003;&#x6765;&#x81EA;&#x6155;&#x8BFE;&#x7F51;&#xFF1A;</p>
+<ul>
+<li><a href="https://coding.imooc.com/class/229.html" target="_blank">&#x300A;React 16.4 &#x5F00;&#x53D1;&#x7B80;&#x4E66;&#x9879;&#x76EE;&#x4ECE;&#x96F6;&#x57FA;&#x7840;&#x5165;&#x95E8;&#x5230;&#x5B9E;&#x6218;&#x300B;</a></li>
+</ul>
+<p>&#x5176;&#x4E2D;&#x63BA;&#x6742;&#x4E2A;&#x4EBA;&#x5BF9;&#x7F16;&#x7A0B;&#x7684;&#x7406;&#x89E3;&#xFF0C;&#x5982;&#x6709;&#x9519;&#x8BEF;&#xFF0C;&#x671B;&#x591A;&#x591A;&#x6307;&#x6B63;&#x3002;</p>
+<ul>
+<li><p><strong>&#x524D;&#x7F6E;&#x77E5;&#x8BC6;</strong>&#xFF1A;</p>
+</li>
+<li><p>ES5/ES6</p>
+</li>
+<li>Webpack</li>
+<li><p>npm</p>
+</li>
+<li><p><strong>&#x6587;&#x7AE0;&#x7ED3;&#x6784;</strong>&#xFF1A;</p>
+</li>
+<li><p>&#x57FA;&#x7840;&#x5185;&#x5BB9; -&gt; &#x73AF;&#x5883;&#x642D;&#x5EFA; -&gt; &#x57FA;&#x7840;&#x8BED;&#x6CD5; -&gt; &#x539F;&#x7406;&#x8FDB;&#x9636; -&gt; &#x52A8;&#x753B;</p>
+</li>
+<li>Redux -&gt; Redux &#x8FDB;&#x9636;</li>
+<li>&#x5B9E;&#x6218;&#x9879;&#x76EE; -&gt; &#x73AF;&#x5883;&#x642D;&#x5EFA; -&gt; Header -&gt; &#x9996;&#x9875; -&gt; &#x8BE6;&#x60C5;&#x9875;</li>
+<li><p>&#x767B;&#x5F55;&#x6821;&#x9A8C; -&gt; &#x4E0A;&#x7EBF;</p>
+</li>
+<li><p><strong>&#x6D89;&#x53CA;&#x77E5;&#x8BC6;&#x70B9;</strong>&#xFF1A;</p>
+</li>
+<li><p>create-react-app</p>
+</li>
+<li>&#x7EC4;&#x4EF6;&#x5316;&#x601D;&#x7EF4;</li>
+<li>JSX</li>
+<li>&#x5F00;&#x53D1;&#x8C03;&#x8BD5;&#x5DE5;&#x5177;</li>
+<li>&#x865A;&#x62DF; DOM</li>
+<li>&#x751F;&#x547D;&#x5468;&#x671F;</li>
+<li>React-transition-group</li>
+<li>Redux</li>
+<li>Antd</li>
+<li>UI&#x3001;&#x5BB9;&#x5668;&#x7EC4;&#x4EF6;</li>
+<li>&#x65E0;&#x72B6;&#x6001;&#x7EC4;&#x4EF6;</li>
+<li>redux-thunk</li>
+<li>redux-saga</li>
+<li>styled-components</li>
+<li>immutable.js</li>
+<li>redux-immutable</li>
+<li>axios</li>
+</ul>
+<p>&#x5176;&#x4E2D;&#xFF0C;&#x672C;&#x6587;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A; Demo &#x6848;&#x4F8B;&#xFF1A;&#x901A;&#x8FC7;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684; TodoList &#x5C0F; Demo&#xFF0C;&#x719F;&#x6089; React &#x7684;&#x5F00;&#x53D1;&#x6D41;&#x7A0B;&#x3002;</p>
+<h2 id="&#x4E09;-&#x6B63;&#x6587;"><a name="&#x4E09;-&#x6B63;&#x6587;" class="anchor-navigation-ex-anchor" href="#&#x4E09;-&#x6B63;&#x6587;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-three" id="chapter-three">&#x4E09; &#x6B63;&#x6587;</a></h2>
+<blockquote>
+<p><a href="#chapter-one">&#x8FD4;&#x56DE;&#x76EE;&#x5F55;</a></p>
+</blockquote>
+<p>Now&#xFF0C;&#x5F00;&#x59CB;&#x641E;&#x4E8B;&#x60C5;&#x3002;</p>
+<h3 id="31-&#x65B0;&#x5EFA;-react-&#x9879;&#x76EE;"><a name="31-&#x65B0;&#x5EFA;-react-&#x9879;&#x76EE;" class="anchor-navigation-ex-anchor" href="#31-&#x65B0;&#x5EFA;-react-&#x9879;&#x76EE;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-three-one" id="chapter-three-one">3.1 &#x65B0;&#x5EFA; React &#x9879;&#x76EE;</a></h3>
+<blockquote>
+<p><a href="#chapter-one">&#x8FD4;&#x56DE;&#x76EE;&#x5F55;</a></p>
+</blockquote>
+<ol>
+<li>&#x4E0B;&#x8F7D; Node.js</li>
+<li>&#x5B89;&#x88C5; React &#x811A;&#x624B;&#x67B6;&#xFF1A;<ol>
+<li><code>npm i create-react-app -g</code></li>
+</ol>
+</li>
+<li>&#x5F00;&#x542F;&#x65B0;&#x9879;&#x76EE;&#xFF1A;<ol>
+<li><code>create-react-app todolist</code></li>
+<li><code>cd todolist</code></li>
+<li><code>npm start</code></li>
+</ol>
+</li>
+<li>&#x6253;&#x5F00; <code>localhost:3000</code> &#x67E5;&#x770B;&#x9875;&#x9762;</li>
+</ol>
+<p><img src="../../public-repertory/img/js-react-demo-one-1.png" alt="&#x56FE;"></p>
+<h3 id="32-&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x89E3;&#x6790;"><a name="32-&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x89E3;&#x6790;" class="anchor-navigation-ex-anchor" href="#32-&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x89E3;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-three-two" id="chapter-three-two">3.2 &#x9879;&#x76EE;&#x76EE;&#x5F55;&#x89E3;&#x6790;</a></h3>
+<blockquote>
+<p><a href="#chapter-one">&#x8FD4;&#x56DE;&#x76EE;&#x5F55;</a></p>
+</blockquote>
+<pre class="language-"><code>- todolist
+  + node_modules &#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014; &#x9879;&#x76EE;&#x4F9D;&#x8D56;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x7684;&#x5305;
+  - public &#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014; &#x5171;&#x7528;&#x6587;&#x4EF6;
+    - favicon.ico        &#x2014;&#x2014; &#x7F51;&#x9875;&#x6807;&#x7B7E;&#x5DE6;&#x4E0A;&#x89D2;&#x5C0F;&#x56FE;&#x6807;
+    - index.html         &#x2014;&#x2014; &#x7F51;&#x7AD9;&#x9996;&#x9875;&#x6A21;&#x677F;
+    - mainfest.json      &#x2014;&#x2014; &#x63D0;&#x4F9B; meta &#x4FE1;&#x606F;&#x7ED9;&#x9879;&#x76EE;&#xFF0C;&#x5E76;&#x4E0E; serviceWorker.js &#x76F8;&#x547C;&#x5E94;&#xFF0C;&#x8FDB;&#x884C;&#x79BB;&#x7EBF; APP &#x5B9A;&#x4E49;
+  - src &#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014; &#x9879;&#x76EE;&#x4E3B;&#x8981;&#x76EE;&#x5F55;
+    - App.css            &#x2014;&#x2014; &#x4E3B;&#x7EC4;&#x4EF6;&#x6837;&#x5F0F;
+    - App.js             &#x2014;&#x2014; &#x4E3B;&#x7EC4;&#x4EF6;&#x5165;&#x53E3;
+    - App.test.js        &#x2014;&#x2014; &#x81EA;&#x52A8;&#x5316;&#x6D4B;&#x8BD5;&#x6587;&#x4EF6;
+    - index.css          &#x2014;&#x2014; &#x5168;&#x5C40; css &#x6587;&#x4EF6;
+    - index.js           &#x2014;&#x2014; &#x6240;&#x6709;&#x4EE3;&#x7801;&#x7684;&#x5165;&#x53E3;
+    - logo.svg           &#x2014;&#x2014; &#x9875;&#x9762;&#x7684;&#x52A8;&#x6001;&#x56FE;
+    - serviceWorker.js   &#x2014;&#x2014; PWA&#x3002;&#x5E2E;&#x52A9;&#x5F00;&#x53D1;&#x624B;&#x673A; APP &#x5E94;&#x7528;&#xFF0C;&#x5177;&#x6709;&#x7F13;&#x5B58;&#x4F5C;&#x7528;
+  - .gitignore &#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014; &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;git &#x4E0A;&#x4F20;&#x7684;&#x65F6;&#x5019;&#x5FFD;&#x7565;&#x54EA;&#x4E9B;&#x6587;&#x4EF6;
+  - package-lock.json &#x2014;&#x2014;&#x2014;&#x2014;&#x2014; &#x9501;&#x5B9A;&#x5B89;&#x88C5;&#x5305;&#x7684;&#x7248;&#x672C;&#x53F7;&#xFF0C;&#x4FDD;&#x8BC1;&#x5176;&#x4ED6;&#x4EBA;&#x5728; npm i &#x7684;&#x65F6;&#x5019;&#x4F7F;&#x7528;&#x4E00;&#x81F4;&#x7684; node &#x5305;
+  - package.json &#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014; node &#x5305;&#x6587;&#x4EF6;&#xFF0C;&#x4ECB;&#x7ECD;&#x9879;&#x76EE;&#x4EE5;&#x53CA;&#x8BF4;&#x660E;&#x4E00;&#x4E9B;&#x4F9D;&#x8D56;&#x5305;&#x7B49;
+  - README.md &#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014; &#x9879;&#x76EE;&#x4ECB;&#x7ECD;&#x6587;&#x4EF6;
+</code></pre><h3 id="33-&#x7CBE;&#x7B80;&#x9879;&#x76EE;&#x7ED3;&#x6784;"><a name="33-&#x7CBE;&#x7B80;&#x9879;&#x76EE;&#x7ED3;&#x6784;" class="anchor-navigation-ex-anchor" href="#33-&#x7CBE;&#x7B80;&#x9879;&#x76EE;&#x7ED3;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-three-three" id="chapter-three-three">3.3 &#x7CBE;&#x7B80;&#x9879;&#x76EE;&#x7ED3;&#x6784;</a></h3>
+<blockquote>
+<p><a href="#chapter-one">&#x8FD4;&#x56DE;&#x76EE;&#x5F55;</a></p>
+</blockquote>
+<p>&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x5F00;&#x53D1;&#xFF0C;&#x4E0B;&#x9762;&#x5BF9; creat-react-app &#x7684;&#x521D;&#x59CB;&#x76EE;&#x5F55;&#x8FDB;&#x884C;&#x7CBE;&#x7B80;&#xFF1A;</p>
+<pre class="language-"><code class="lang-shell">- todolist
+  + node_modules &#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014; &#x9879;&#x76EE;&#x4F9D;&#x8D56;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x7684;&#x5305;
+  - public &#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014; &#x5171;&#x7528;&#x6587;&#x4EF6;
+    - favicon.ico        &#x2014;&#x2014; &#x7F51;&#x9875;&#x6807;&#x7B7E;&#x5DE6;&#x4E0A;&#x89D2;&#x5C0F;&#x56FE;&#x6807;
+    - index.html         &#x2014;&#x2014; &#x7F51;&#x7AD9;&#x9996;&#x9875;&#x6A21;&#x677F;
+  - src &#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014; &#x91CD;&#x8981;&#x7684;&#x76EE;&#x5F55;
+    - App.js             &#x2014;&#x2014; &#x4E3B;&#x7EC4;&#x4EF6;&#x5165;&#x53E3;
+    - index.js           &#x2014;&#x2014; &#x6240;&#x6709;&#x4EE3;&#x7801;&#x7684;&#x5165;&#x53E3;
+  - .gitignore &#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014; &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;git &#x4E0A;&#x4F20;&#x7684;&#x65F6;&#x5019;&#x5FFD;&#x7565;&#x54EA;&#x4E9B;&#x6587;&#x4EF6;
+  - package.json &#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014; node &#x5305;&#x6587;&#x4EF6;&#xFF0C;&#x4ECB;&#x7ECD;&#x9879;&#x76EE;&#x4EE5;&#x53CA;&#x8BF4;&#x660E;&#x4E00;&#x4E9B;&#x4F9D;&#x8D56;&#x5305;&#x7B49;
+  - README.md &#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014; &#x9879;&#x76EE;&#x4ECB;&#x7ECD;&#x6587;&#x4EF6;
+</code></pre>
+<p><code>favicon.ico</code>&#x3001;<code>.gitignore</code>&#x3001;<code>README.md</code> &#x662F;&#x6211;&#x4EEC;&#x65E0;&#x9700;&#x7406;&#x4F1A;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7CBE;&#x7B80;&#x4E0B;&#x5B83;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
+<blockquote>
+<p>index.html</p>
+</blockquote>
+<pre class="language-"><code class="lang-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>utf-8<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>shortcut icon<span class="token punctuation">&quot;</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>%PUBLIC_URL%/favicon.ico<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span>
+      <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1, shrink-to-fit=no<span class="token punctuation">&quot;</span></span>
+    <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Todolist<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>noscript</span><span class="token punctuation">&gt;</span></span>&#x4F60;&#x9700;&#x8981;&#x5141;&#x8BB8;&#x5728; APP &#x4E2D;&#x8FD0;&#x884C; JavaScript<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>noscript</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>root<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<blockquote>
+<p>App.js</p>
+</blockquote>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">&quot;App&quot;</span><span class="token operator">&gt;</span>
+        Hello React<span class="token operator">!</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p>index.js</p>
+</blockquote>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> ReactDOM <span class="token keyword">from</span> <span class="token string">&apos;react-dom&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">&apos;./App&apos;</span><span class="token punctuation">;</span>
+
+ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>App <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">,</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&apos;root&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p>package.json</p>
+</blockquote>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;todolist&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.1.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;private&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;react&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^16.8.4&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;react-dom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^16.8.4&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;react-scripts&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2.1.8&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token string">&quot;react-scripts start&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;react-scripts build&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;test&quot;</span><span class="token operator">:</span> <span class="token string">&quot;react-scripts test&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;eject&quot;</span><span class="token operator">:</span> <span class="token string">&quot;react-scripts eject&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;eslintConfig&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;extends&quot;</span><span class="token operator">:</span> <span class="token string">&quot;react-app&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;browserslist&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;&gt;0.2%&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;not dead&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;not ie &lt;= 11&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;not op_mini all&quot;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="34-&#x521D;&#x63A2;&#x7EC4;&#x4EF6;"><a name="34-&#x521D;&#x63A2;&#x7EC4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#34-&#x521D;&#x63A2;&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-three-four" id="chapter-three-four">3.4 &#x521D;&#x63A2;&#x7EC4;&#x4EF6;</a></h3>
+<blockquote>
+<p><a href="#chapter-one">&#x8FD4;&#x56DE;&#x76EE;&#x5F55;</a></p>
+</blockquote>
+<p><img src="../../public-repertory/img/js-react-demo-one-2.png" alt="&#x56FE;"></p>
+<p>&#x7C7B;&#x4F3C;&#x4E8E;&#x4E0A;&#x56FE;&#xFF0C;&#x5728;&#x8FDB;&#x884C;&#x9875;&#x9762;&#x5F00;&#x53D1;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x5F88;&#x5BB9;&#x6613;&#x5730;&#x4F7F;&#x7528;&#x5E96;&#x4E01;&#x89E3;&#x725B;&#x7684;&#x6280;&#x5DE7;&#xFF0C;&#x5C06;&#x9875;&#x9762;&#x8FDB;&#x884C;&#x5212;&#x5206;&#xFF0C;&#x7136;&#x540E;&#x4E00;&#x90E8;&#x5206;&#x4E00;&#x90E8;&#x5206;&#x5730;&#x5C06;&#x9875;&#x9762;&#x642D;&#x5EFA;&#x51FA;&#x6765;&#x3002;</p>
+<p>&#x7ED9;&#x4E2A;&#x6BD4;&#x8F83;&#x5B98;&#x65B9;&#x7684;&#x8BF4;&#x6CD5;&#xFF0C;&#x5C31;&#x53EB;&#x9875;&#x9762;&#x7EC4;&#x4EF6;&#x5316;&#xFF1A;&#x5C06;&#x9875;&#x9762;&#x5207;&#x6210;&#x51E0;&#x4E2A;&#x90E8;&#x5206;&#xFF0C;&#x4ECE;&#x800C;&#x6709;&#x5229;&#x4E8E;&#x9875;&#x9762;&#x7684;&#x62FC;&#x88C5;&#x4EE5;&#x53CA;&#x4EE3;&#x7801;&#x7684;&#x7EF4;&#x62A4;&#x3002;</p>
+<p>&#x5728; create-react-app &#x7684;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x4E2D;&#xFF0C;App.js &#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#xFF0C;&#x4E00;&#x8D77;&#x6765;&#x770B;&#xFF1A;</p>
+<blockquote>
+<p>App.js</p>
+</blockquote>
+<pre class="language-"><code class="lang-js"><span class="token comment">// 1. &#x5F15;&#x7528; React &#x53CA;&#x5176;&#x7EC4;&#x4EF6;</span>
+<span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 2. &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x53EB; App &#x7684;&#x7EC4;&#x4EF6;&#x7EE7;&#x627F;&#x4E8E; Component</span>
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">&quot;App&quot;</span><span class="token operator">&gt;</span>
+        Hello React<span class="token operator">!</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 3. &#x6839;&#x636E; React &#x5B9E;&#x4F8B;&#xFF0C;&#x5728; App &#x5185;&#x90E8;&#x7F16;&#x5199;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x5BFC;&#x51FA;&#x8FD9;&#x4E2A; App &#x7EC4;&#x4EF6;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span>
+</code></pre>
+<p>&#x5728;&#x4E0A;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x5F15;&#x7528;&#x3001;&#x5B9A;&#x4E49;&#x5E76;&#x5BFC;&#x51FA;&#x4E86;&#x8FD9;&#x4E2A; App &#x7684;&#x7EC4;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x5C31;&#x8981;&#x4F7F;&#x7528;&#x5B83;&#xFF1A;</p>
+<blockquote>
+<p>index.js</p>
+</blockquote>
+<pre class="language-"><code class="lang-js"><span class="token comment">// 1. &#x5F15;&#x5165; React&#x3001;ReactDOM</span>
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> ReactDOM <span class="token keyword">from</span> <span class="token string">&apos;react-dom&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 2. &#x5C06; App.js &#x5BFC;&#x5165;&#x8FDB;&#x6765;</span>
+<span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">&apos;./App&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 3. &#x901A;&#x8FC7; ReactDOM &#x5C06; App.js &#x4EE5;&#x865A;&#x62DF; DOM &#x7684;&#x5F62;&#x5F0F;&#x6E32;&#x67D3;/&#x6302;&#x8F7D;&#x5230; root &#x6839;&#x8282;&#x70B9;&#xFF0C;&#x8BE5;&#x8282;&#x70B9;&#x5728; index.html &#x4E2D;</span>
+ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>App <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">,</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&apos;root&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><code>index.js</code> &#x544A;&#x8BC9;&#x6211;&#x4EEC;&#xFF0C;&#x5B83;&#x4F1A;&#x901A;&#x8FC7; ReactDom&#xFF0C;&#x5C06; App.js &#x8FD9;&#x4E2A;&#x7EC4;&#x4EF6;&#x6302;&#x8F7D;&#x5230; <code>root</code> &#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#xFF0C;&#x90A3;&#x4E48;&#xFF0C;&#x8FD9;&#x4E2A; <code>root</code> &#x5728;&#x54EA;&#x91CC;&#x5462;&#xFF1F;&#x6211;&#x4EEC;&#x67E5;&#x770B;&#x4E0B; index.html&#xFF1A;</p>
+<blockquote>
+<p>index.html</p>
+</blockquote>
+<pre class="language-"><code class="lang-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>utf-8<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>shortc ut icon<span class="token punctuation">&quot;</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>%PUBLIC_URL%/favicon.ico<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span>
+      <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1, shrink-to-fit=no<span class="token punctuation">&quot;</span></span>
+    <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Todolist<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>noscript</span><span class="token punctuation">&gt;</span></span>&#x4F60;&#x9700;&#x8981;&#x5141;&#x8BB8;&#x5728; APP &#x4E2D;&#x8FD0;&#x884C; JavaScript<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>noscript</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>root<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>OK&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x5730;&#x6211;&#x4EEC;&#x5C31;&#x634B;&#x6E05;&#x695A;&#x601D;&#x8DEF;&#x4E86;&#xFF1A;&#x6211;&#x4EEC;&#x5728; index.html &#x4E2D;&#x5B9A;&#x4E49;&#x4E86;&#x4E2A; <code>root</code> &#x6839;&#x8282;&#x70B9;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x901A;&#x8FC7; index.js&#xFF0C;&#x5C06; App.js &#x4EE5;&#x7EC4;&#x4EF6;&#x5F62;&#x5F0F;&#x6E32;&#x67D3;&#x5230;&#x4E86; index.html &#x4E2D;&#xFF0C;&#x4ECE;&#x800C;&#x5B9E;&#x73B0;&#x4E86;&#x8282;&#x70B9;&#x7684;&#x6302;&#x8F7D;&#x3002;</p>
+<blockquote>
+<p>&#x601D;&#x7EF4;&#x53D1;&#x6563;&#xFF1A;&#x6211;&#x4EEC;&#x77E5;&#x9053; index.js &#x548C; App.js &#x7684;&#x6700;&#x7EC8;&#x7ED3;&#x5408;&#x662F;&#x6302;&#x8F7D;&#x5230; <code>id=&quot;root&quot;</code> &#x8282;&#x70B9;&#x4E0A;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x518D;&#x5F00;&#x4E00;&#x4E2A; index2.js &#x548C; App2.js&#xFF0C;&#x6302;&#x8F7D;&#x5230; <code>id=&quot;root2&quot;</code> &#x8282;&#x70B9;&#x4E0A;&#xFF0C;&#x884C;&#x4E0D;&#x884C;&#x5462;&#xFF1F;&#x4EA6;&#x6216;&#x8005;&#x6211;&#x4EEC;&#x5F00;&#x4E00;&#x4E2A; <code>id=&quot;root3&quot;</code> &#x7684;&#x8282;&#x70B9;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x5176;&#x4E2D;&#x64CD;&#x4F5C; jQuery&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x4E5F;&#x53EF;&#x884C;&#xFF1F;</p>
+</blockquote>
+<h3 id="35-jsx"><a name="35-jsx" class="anchor-navigation-ex-anchor" href="#35-jsx"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-three-five" id="chapter-three-five">3.5 JSX</a></h3>
+<blockquote>
+<p><a href="#chapter-one">&#x8FD4;&#x56DE;&#x76EE;&#x5F55;</a></p>
+</blockquote>
+<p>&#x5728; create-react-app &#x7684;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4E0D;&#x7BA1;&#x662F; index.js &#x4E2D;&#x7684;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js">ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>App <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">,</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&apos;root&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x8FD8;&#x662F; App.js &#x4E2D;&#x7684;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">&quot;App&quot;</span><span class="token operator">&gt;</span>
+        Hello React<span class="token operator">!</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x7B49;&#x8FD9;&#x4E9B;&#x6709;&#x5173; DOM &#x7684;&#x6E32;&#x67D3;&#xFF0C;&#x90FD;&#x9700;&#x8981;&#x7528;&#x5230; JSX&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x5F15;&#x5165; React&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li><strong>JSX &#x7684;&#x5B9A;&#x4E49;</strong>&#xFF1A;</li>
+</ul>
+<p>&#x90A3;&#x4E48;&#xFF0C;&#x4EC0;&#x4E48;&#x662F; JSX &#x5462;&#xFF1F;</p>
+<p>React &#x7684;&#x6838;&#x5FC3;&#x673A;&#x5236;&#x4E4B;&#x4E00;&#x5C31;&#x662F;&#x53EF;&#x4EE5;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x521B;&#x5EFA;&#x865A;&#x62DF;&#x7684; DOM &#x5143;&#x7D20;&#x3002;React &#x5229;&#x7528;&#x865A;&#x62DF; DOM &#x6765;&#x51CF;&#x5C11;&#x5BF9;&#x5B9E;&#x9645; DOM &#x7684;&#x64CD;&#x4F5C;&#x4ECE;&#x800C;&#x63D0;&#x5347;&#x6027;&#x80FD;&#x3002; </p>
+<p>JSX &#x5C31;&#x662F; JavaScript &#x548C; XML &#x7ED3;&#x5408;&#x7684;&#x4E00;&#x79CD;&#x683C;&#x5F0F;&#x3002;</p>
+<p>React &#x53D1;&#x660E;&#x4E86; JSX&#xFF0C;&#x5229;&#x7528; HTML &#x8BED;&#x6CD5;&#x6765;&#x521B;&#x5EFA;&#x865A;&#x62DF; DOM&#x3002;&#x5F53;&#x9047;&#x5230; <code>&lt;</code>&#xFF0C;JSX &#x5C31;&#x5F53; HTML &#x89E3;&#x6790;&#xFF0C;&#x9047;&#x5230; <code>{</code> &#x5C31;&#x5F53; JavaScript &#x89E3;&#x6790;&#x3002;</p>
+<ul>
+<li><strong>JSX &#x7684;&#x4F7F;&#x7528;</strong>&#xFF1A;</li>
+</ul>
+<p>&#x5728; JSX &#x8BED;&#x6CD5;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x7684;&#x7EC4;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x5B83;&#x7684;&#x5B9A;&#x4E49;&#x540D;&#x5373;&#x53EF;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<blockquote>
+<p>index.js</p>
+</blockquote>
+<pre class="language-"><code class="lang-js"><span class="token comment">// 1. &#x5F15;&#x5165; React&#x3001;ReactDOM</span>
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> ReactDOM <span class="token keyword">from</span> <span class="token string">&apos;react-dom&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 2. &#x5C06; App.js &#x5BFC;&#x5165;&#x8FDB;&#x6765;</span>
+<span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">&apos;./App&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 3. &#x901A;&#x8FC7; ReactDOM &#x5C06; App.js &#x4EE5;&#x865A;&#x62DF; DOM &#x7684;&#x5F62;&#x5F0F;&#x6E32;&#x67D3;/&#x6302;&#x8F7D;&#x5230; root &#x6839;&#x8282;&#x70B9;&#xFF0C;&#x8BE5;&#x8282;&#x70B9;&#x5728; index.html &#x4E2D;</span>
+ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>App <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">,</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&apos;root&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x5176;&#x4E2D;&#x7B2C;&#x4E09;&#x70B9;&#x5373;&#x662F;&#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;&#x6E32;&#x67D3;&#x5230;&#x6839;&#x8282;&#x70B9;&#x3002;</p>
+<blockquote>
+<p>&#x63D0;&#x793A;&#xFF1A;&#x5728; React &#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x7EC4;&#x4EF6;&#x4E0D;&#x80FD;&#x5C0F;&#x5199;&#x5F00;&#x5934; <del>app</del>&#xFF0C;&#x800C;&#x662F;&#x4F7F;&#x7528; <code>App</code> &#x8FD9;&#x6837;&#x7684;&#x5927;&#x5199;&#x5F00;&#x5934;&#x5F62;&#x5F0F;&#x3002;</p>
+</blockquote>
+<h3 id="36-&#x4E8B;&#x4EF6;&#x53CA;&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;"><a name="36-&#x4E8B;&#x4EF6;&#x53CA;&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;" class="anchor-navigation-ex-anchor" href="#36-&#x4E8B;&#x4EF6;&#x53CA;&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-three-six" id="chapter-three-six">3.6 &#x4E8B;&#x4EF6;&#x53CA;&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;</a></h3>
+<blockquote>
+<p><a href="#chapter-one">&#x8FD4;&#x56DE;&#x76EE;&#x5F55;</a></p>
+</blockquote>
+<p>&#x8FD9;&#x662F;&#x6211;&#x4EEC;&#x7CBE;&#x7B80;&#x540E;&#x7684;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#xFF1A;</p>
+<p><img src="../../public-repertory/img/js-react-demo-one-3.png" alt="&#x56FE;"></p>
+<p>&#x6211;&#x4EEC;&#x4FEE;&#x6539;&#x4E0B;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#xFF0C;&#x5F00;&#x59CB;&#x7F16;&#x5199; TodoList&#xFF1A;</p>
+<p><img src="../../public-repertory/img/js-react-demo-one-4.png" alt="&#x56FE;"></p>
+<p><strong>&#x9996;&#x5148;</strong>&#xFF0C;&#x6211;&#x4EEC;&#x4FEE;&#x6539; App.js &#x4E3A; TodoList.js&#xFF1A;</p>
+<blockquote>
+<p><del>App.js</del> TodoList.js</p>
+</blockquote>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">TodoList</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">&quot;TodoList&quot;</span><span class="token operator">&gt;</span>
+        Hello React<span class="token operator">!</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> TodoList<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x7136;&#x540E;</strong>&#xFF0C;&#x6211;&#x4EEC;&#x4FEE;&#x6539; index.js &#x4E2D;&#x6302;&#x8F7D;&#x5230; index.html &#x7684;&#x7EC4;&#x4EF6;&#x4E3A; TodoList&#xFF1A;</p>
+<blockquote>
+<p>index.js</p>
+</blockquote>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> ReactDOM <span class="token keyword">from</span> <span class="token string">&apos;react-dom&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> TodoList <span class="token keyword">from</span> <span class="token string">&apos;./TodoList&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 3. &#x901A;&#x8FC7; ReactDOM &#x5C06; App.js &#x4EE5;&#x865A;&#x62DF; DOM &#x7684;&#x5F62;&#x5F0F;&#x6E32;&#x67D3;/&#x6302;&#x8F7D;&#x5230; root &#x6839;&#x8282;&#x70B9;&#xFF0C;&#x8BE5;&#x8282;&#x70B9;&#x5728; index.html &#x4E2D;</span>
+ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>TodoList <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">,</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&apos;root&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x4FEE;&#x6539;&#x5B8C;&#x6BD5;&#xFF0C;&#x5C0F;&#x4F19;&#x4F34;&#x4EEC;&#x53EF;&#x4EE5;&#x91CD;&#x542F;&#x4E0B; 3000 &#x7AEF;&#x53E3;&#xFF0C;&#x67E5;&#x770B;&#x4E0B;&#x6211;&#x4EEC;&#x7684; React &#x662F;&#x5426;&#x80FD;&#x6B63;&#x5E38;&#x542F;&#x52A8;&#x3002;</p>
+<blockquote>
+<p>&#x5728;&#x6B64;&#x6B65;&#x9AA4;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4EC5;&#x4EC5;&#x4FEE;&#x6539; App.js &#x4E3A; TodoList.js&#xFF0C;&#x4F7F; index.js &#x6302;&#x8F7D;&#x5230; <code>root</code> &#x7684;&#x662F; TodoList.js&#xFF0C;&#x9664;&#x6B64;&#x4E4B;&#x5916;&#x6CA1;&#x8FDB;&#x884C;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x3002;</p>
+</blockquote>
+<p><strong>&#x6700;&#x540E;</strong>&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x8FDB;&#x4E00;&#x6B65;&#x7F16;&#x5199; TodoList&#xFF0C;&#x83B7;&#x53D6;&#x5230; input &#x8F93;&#x5165;&#x6846;&#x7684;&#x503C;&#xFF0C;&#x5E76;&#x6E32;&#x67D3;&#x5230;&#x5217;&#x8868;&#x4E2D;&#xFF1A;</p>
+<blockquote>
+<p>TodoList.js</p>
+</blockquote>
+<pre class="language-"><code class="lang-js"><span class="token comment">// Fragment &#x662F;&#x4E00;&#x79CD;&#x5360;&#x4F4D;&#x7B26;&#x5F62;&#x5F0F;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E; Vue &#x7684; Template</span>
+<span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component<span class="token punctuation">,</span> Fragment <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">TodoList</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+      inputValue<span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span><span class="token punctuation">,</span>
+      list<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>Fragment<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+          <span class="token punctuation">{</span><span class="token comment">/* &#x5355;&#x9879;&#x6570;&#x636E;&#x7ED1;&#x5B9A; */</span><span class="token punctuation">}</span>
+          <span class="token operator">&lt;</span>input 
+            type<span class="token operator">=</span><span class="token string">&quot;text&quot;</span> 
+            value<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>inputValue<span class="token punctuation">}</span>
+            onChange<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleInputChange</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+          <span class="token operator">/</span><span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>button<span class="token operator">&gt;</span>&#x63D0;&#x4EA4;<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>ul<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>span<span class="token operator">&gt;</span>&#x5403;&#x996D;<span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>span<span class="token operator">&gt;</span><span class="token constant">X</span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>span<span class="token operator">&gt;</span>&#x7761;&#x89C9;<span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>span<span class="token operator">&gt;</span><span class="token constant">X</span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>span<span class="token operator">&gt;</span>&#x6253;&#x8C46;&#x8C46;<span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>span<span class="token operator">&gt;</span><span class="token constant">X</span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>Fragment<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">handleInputChange</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      inputValue<span class="token punctuation">:</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> TodoList<span class="token punctuation">;</span>
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x5148;&#x67E5;&#x770B;&#x6F14;&#x793A;&#xFF1A;</p>
+<p><img src="../../public-repertory/img/js-react-demo-one-5.gif" alt="&#x56FE;"></p>
+<p>OK&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5728;&#x6BCF;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x80FD;&#x7ACB;&#x523B;&#x83B7;&#x53D6;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x5B9E;&#x73B0;&#x4E86;&#x5355;&#x5411;&#x6570;&#x636E;&#x6D41;&#xFF1A;&#x8F93;&#x5165;&#x6846; -&gt; JS &#x5185;&#x5B58;&#x3002;</p>
+<p>&#x5176;&#x4E2D;&#x6709; 3 &#x70B9;&#x9700;&#x8981;&#x8BB2;&#x89E3;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li><code>Fragment</code> &#x662F; React &#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x79CD;&#x5360;&#x4F4D;&#x7B26;&#xFF0C;&#x5B83;&#x50CF; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token punctuation">&gt;</span></span></code>&#x3001;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span></code> &#x7B49;&#x6807;&#x7B7E;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x5728;&#x5B9E;&#x9645;&#x6E32;&#x67D3;&#x7684;&#x65F6;&#x5019;&#x662F;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x7684;&#x3002;&#x56E0;&#x4E3A; React &#x7684; JSX &#x9996;&#x5C42;&#x5FC5;&#x987B;&#x8981;&#x6709;&#x6807;&#x7B7E;&#xFF0C;&#x7136;&#x540E;&#x5982;&#x679C;&#x4F7F;&#x7528; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span></code> &#x7B49;&#x4F1A;&#x5360;&#x7528;&#x4E00;&#x4E2A;&#x5C42;&#x7EA7;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E; Vue &#x7684; <code>Template</code>&#xFF0C;React &#x4F7F;&#x7528;&#x4E86; <code>Fragment</code> &#x8FD9;&#x79CD;&#x7A7A;&#x6807;&#x7B7E;&#x3002;</li>
+<li><code>constructor</code> &#x8868;&#x793A;&#x7236;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF0C;&#x5728; ES6 &#x4E2D;&#xFF0C;&#x6784;&#x9020;&#x65B9;&#x6CD5; <code>constructor</code> &#x76F8;&#x5F53;&#x4E8E;&#x5176;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x6765;&#x65B0;&#x5EFA;&#x7236;&#x7C7B;&#x7684; <code>this</code> &#x5BF9;&#x8C61;&#xFF0C;&#x800C; <code>super(props)</code> &#x5219;&#x662F;&#x7528;&#x6765;&#x4FEE;&#x6B63; <code>this</code> &#x6307;&#x5411;&#x7684;&#x3002;&#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x91CC;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x5728;&#x6574;&#x4E2A; js &#x6587;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;&#x3002;</li>
+<li><code>onChange</code> &#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#xFF0C;&#x662F; React &#x6307;&#x5B9A;&#x7684;&#x5199;&#x6CD5;&#xFF0C;&#x4F8B;&#x5982; <code>onClick</code> &#x7B49;&#xFF0C;&#x5728;&#x539F;&#x751F; JS &#x4E2D;&#xFF0C;&#x4F7F;&#x7528;&#x7684;&#x662F; <code>onclick</code>&#xFF0C;&#x800C;&#x5728; React &#x4E2D;&#xFF0C;&#x4E3A;&#x4E86;&#x533A;&#x522B;&#xFF0C;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x534A;&#x9A7C;&#x5CF0;&#x7F16;&#x5199;&#x4E8B;&#x4EF6;&#x540D;&#x5B57;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x7ED1;&#x5B9A;&#x7684; <code>handleInputChange</code>&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728; <code>render</code> &#x4E0B;&#x9762;&#x8FDB;&#x884C;&#x7F16;&#x5199;&#x3002;</li>
+</ol>
+<blockquote>
+<p>&#x53C2;&#x8003;&#x6587;&#x732E;&#xFF1A;<a href="https://www.jianshu.com/p/8f6dd832e57a" target="_blank">&#x300A;react &#x4E2D; constructor() &#x548C; super() &#x5230;&#x5E95;&#x662F;&#x4E2A;&#x5565;&#xFF1F;&#x300B;</a></p>
+</blockquote>
+<p>&#x8FD9;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x5BF9; React &#x7684;&#x6570;&#x636E;&#x53CA;&#x4E8B;&#x4EF6;&#x6709;&#x4E86;&#x521D;&#x6B65;&#x7406;&#x89E3;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x52A0;&#x4E0B;&#x6309;&#x94AE;&#x70B9;&#x51FB;&#x65B0;&#x589E;&#x5217;&#x8868;&#x4E8B;&#x4EF6;&#x4EE5;&#x53CA;&#x70B9;&#x51FB; <code>X</code> &#x5220;&#x9664;&#x5217;&#x8868;&#x4E8B;&#x4EF6;&#x3002;</p>
+<blockquote>
+<p>TodoList.js</p>
+</blockquote>
+<pre class="language-"><code class="lang-js"><span class="token comment">// Fragment &#x662F;&#x4E00;&#x79CD;&#x5360;&#x4F4D;&#x7B26;&#x5F62;&#x5F0F;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E; Vue &#x7684; Template</span>
+<span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component<span class="token punctuation">,</span> Fragment <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">TodoList</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+
+  <span class="token comment">// &#x6784;&#x9020;&#x51FD;&#x6570;</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// &#x5B9A;&#x4E49;&#x6570;&#x636E;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+      inputValue<span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span><span class="token punctuation">,</span>
+      list<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// &#x6E32;&#x67D3;&#x9875;&#x9762;</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> closeStyle <span class="token operator">=</span> <span class="token punctuation">{</span>
+      fontSize<span class="token punctuation">:</span> <span class="token string">&apos;1.2em&apos;</span><span class="token punctuation">,</span>
+      color<span class="token punctuation">:</span> <span class="token string">&apos;deepskyblue&apos;</span><span class="token punctuation">,</span>
+      marginLeft<span class="token punctuation">:</span> <span class="token string">&apos;10px&apos;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>Fragment<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+          <span class="token punctuation">{</span><span class="token comment">/* &#x5355;&#x9879;&#x6570;&#x636E;&#x7ED1;&#x5B9A; */</span><span class="token punctuation">}</span>
+          <span class="token punctuation">{</span><span class="token comment">/* &#x5728; React &#x4E2D;&#xFF0C;&#x7ED1;&#x5B9A;&#x65F6;&#x95F4;&#x7684;&#xFF0C;&#x4E00;&#x822C;&#x4E3A;&#x534A;&#x9A7C;&#x5CF0;&#x5F62;&#x5F0F; */</span><span class="token punctuation">}</span>
+          <span class="token operator">&lt;</span>input 
+            type<span class="token operator">=</span><span class="token string">&quot;text&quot;</span> 
+            value<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>inputValue<span class="token punctuation">}</span>
+            onChange<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleInputChange</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+          <span class="token operator">/</span><span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleBtnClick</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>&#x63D0;&#x4EA4;<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>ul<span class="token operator">&gt;</span>
+          <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>list<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+              <span class="token keyword">return</span> <span class="token operator">&lt;</span>li key<span class="token operator">=</span><span class="token punctuation">{</span>index<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>span<span class="token operator">&gt;</span><span class="token punctuation">{</span>index<span class="token punctuation">}</span><span class="token punctuation">.</span> <span class="token punctuation">{</span>item<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>span style<span class="token operator">=</span><span class="token punctuation">{</span>closeStyle<span class="token punctuation">}</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleItemDelete</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> index<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token constant">X</span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+              <span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span>
+          <span class="token punctuation">}</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>Fragment<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// &#x65B9;&#x6CD5;&#x4F53; - &#x8F93;&#x5165;&#x5185;&#x5BB9;</span>
+  <span class="token function">handleInputChange</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      inputValue<span class="token punctuation">:</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// &#x65B9;&#x6CD5;&#x4F53; - &#x70B9;&#x51FB;&#x63D0;&#x4EA4;</span>
+  <span class="token function">handleBtnClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      list<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token operator">...</span>this<span class="token punctuation">.</span>state<span class="token punctuation">.</span>list<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>inputValue<span class="token punctuation">]</span><span class="token punctuation">,</span>
+      inputValue<span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// &#x65B9;&#x6CD5;&#x4F53; - &#x5220;&#x9664;&#x9879;&#x76EE;</span>
+  <span class="token function">handleItemDelete</span><span class="token punctuation">(</span><span class="token parameter">index</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>this<span class="token punctuation">.</span>state<span class="token punctuation">.</span>list<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    list<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      list<span class="token punctuation">:</span> list
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> TodoList<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="../../public-repertory/img/js-react-demo-one-6.gif" alt="&#x56FE;"></p>
+<p>&#x5728;&#x8FD9;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E86;&#x89E3; 3 &#x4E2A;&#x77E5;&#x8BC6;&#x70B9;&#xFF1A;</p>
+<p><strong>&#x77E5;&#x8BC6;&#x70B9; 1</strong>. &#x5728; <code>render</code> &#x4E2D; <code>closeStyle</code> &#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x6211;&#x4EEC;&#x7528;&#x6765;&#x5B9A;&#x4E49; CSS &#x5C5E;&#x6027;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x901A;&#x8FC7; <code>style={closeStyle}</code>&#xFF0C;&#x76F4;&#x63A5;&#x5199;&#x4E86;&#x4E2A;&#x884C;&#x5185;&#x6837;&#x5F0F;&#xFF08;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x4F1A;&#x62BD;&#x79BB;&#x51FA;&#x6765;&#xFF09;</p>
+<p><strong>&#x77E5;&#x8BC6;&#x70B9; 2</strong>. &#x5173;&#x4E8E; JSX &#x904D;&#x5386;&#x8F93;&#x51FA;&#x7684;&#x5F62;&#x5F0F;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>list<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token operator">&lt;</span>li key<span class="token operator">=</span><span class="token punctuation">{</span>index<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>span<span class="token operator">&gt;</span><span class="token punctuation">{</span>index<span class="token punctuation">}</span><span class="token punctuation">.</span> <span class="token punctuation">{</span>item<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>span style<span class="token operator">=</span><span class="token punctuation">{</span>closeStyle<span class="token punctuation">}</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleItemDelete</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> index<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token constant">X</span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x901A;&#x8FC7; <code>{}</code> &#x91CC;&#x9762;&#x5FAA;&#x73AF;&#x8F93;&#x51FA; DOM &#x8282;&#x70B9;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5B66;&#x8FC7; jQuery&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x5C06;&#x5B83;&#x5F53;&#x4E3A;&#x62FC;&#x63A5;&#x5B57;&#x7B26;&#x4E32;&#xFF1B;&#x5982;&#x679C;&#x4F60;&#x5B66;&#x8FC7; Vue&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x5C06;&#x5B83;&#x5F53;&#x6210; <code>v-for</code> &#x53D8;&#x4E86;&#x79CD;&#x5199;&#x6CD5;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x4E0D;&#x7528;&#x7406;&#x4F1A;&#x4E3A;&#x4EC0;&#x4E48;&#x8FD9;&#x4E48;&#x5199;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x63A5;&#x53D7;&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x5148;&#x3002;</p>
+<p><strong>&#x77E5;&#x8BC6;&#x70B9; 3</strong>. &#x5173;&#x4E8E;&#x6539;&#x53D8; <code>constructor</code> &#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  list<span class="token punctuation">:</span> list
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8FD9;&#x79CD;&#x5F62;&#x5F0F;&#x3002;&#x5176;&#x5B9E;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;&#x6709;&#x8BB0;&#x5FC6;&#x6280;&#x5DE7;&#x7684;&#xFF0C;&#x8981;&#x77E5;&#x9053;&#x6211;&#x4EEC;&#x5728;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// &#x5B9A;&#x4E49;&#x6570;&#x636E;</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+  inputValue<span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span><span class="token punctuation">,</span>
+  list<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5373;&#xFF1A; <code>this.state</code>&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x6570;&#x636E;&#xFF0C;&#x90A3;&#x5C31;&#x662F; <code>this.setState</code> &#x4E86;&#x3002;</p>
+<p>&#x81F3;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x7B80;&#x6613; TodoList &#x5C31;&#x5B9E;&#x73B0;&#x4E86;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x8FDB;&#x4E00;&#x6B65;&#x4F18;&#x5316;&#xFF0C;&#x5C06; CSS &#x548C; JS &#x8FDB;&#x4E00;&#x6B65;&#x62BD;&#x53D6;&#x3002;</p>
+<h3 id="37-&#x4F18;&#x5316;-&#x62BD;&#x53D6;-css"><a name="37-&#x4F18;&#x5316;-&#x62BD;&#x53D6;-css" class="anchor-navigation-ex-anchor" href="#37-&#x4F18;&#x5316;-&#x62BD;&#x53D6;-css"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-three-seven" id="chapter-three-seven">3.7 &#x4F18;&#x5316;-&#x62BD;&#x53D6; CSS</a></h3>
+<blockquote>
+<p><a href="#chapter-one">&#x8FD4;&#x56DE;&#x76EE;&#x5F55;</a></p>
+</blockquote>
+<p>&#x5728;&#x4E0A;&#x9762;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x63D0;&#x5230; <code>closeStyle</code> &#x662F;&#x4E00;&#x79CD;&#x884C;&#x5185;&#x7684;&#x5199;&#x6CD5;&#xFF0C;&#x4F5C;&#x4E3A;&#x4E00;&#x679A; <strong>&#x5B8C;&#x7F8E;&#x7F16;&#x7A0B;&#x8005;</strong>&#xFF0C;&#x6211;&#x4EEC;&#x80AF;&#x5B9A;&#x4E0D;&#x80FD;&#x5BB9;&#x5FCD;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x62BD;&#x79BB;&#xFF1A;</p>
+<blockquote>
+<p>TodoList.js</p>
+</blockquote>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component<span class="token punctuation">,</span> Fragment <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token string">&apos;./style.css&apos;</span>
+
+<span class="token comment">// ... &#x7701;&#x7565;&#x4E2D;&#x95F4;&#x4EE3;&#x7801;</span>
+
+<span class="token operator">&lt;</span>ul<span class="token operator">&gt;</span>
+<span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>list<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token operator">&lt;</span>li key<span class="token operator">=</span><span class="token punctuation">{</span>index<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>span<span class="token operator">&gt;</span><span class="token punctuation">{</span>index<span class="token punctuation">}</span><span class="token punctuation">.</span> <span class="token punctuation">{</span>item<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>span className<span class="token operator">=</span><span class="token string">&quot;icon-close&quot;</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleItemDelete</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> index<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token constant">X</span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span>
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x77E5;&#x9053;&#xFF1A;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>import</code> &#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x76F4;&#x63A5;&#x5C06; CSS &#x6587;&#x4EF6;&#x76F4;&#x63A5;&#x5BFC;&#x5165;&#xFF0C;&#x7136;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x547D;&#x540D; <code>class</code> &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x56E0;&#x4E3A; React &#x6015; JS &#x7684; <code>class</code> &#x4E0E; HTML &#x7684; <code>class</code> &#x51B2;&#x7A81;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4F7F;&#x7528; <code>className</code>&#x3002;</p>
+<p>&#x6700;&#x540E;&#x6211;&#x4EEC;&#x518D;&#x7F16;&#x5199;&#x4E0B; CSS &#x6587;&#x4EF6;&#xFF1A;</p>
+<pre class="language-"><code class="lang-css"><span class="token selector">.icon-close</span> <span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 1.2em<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> deepskyblue<span class="token punctuation">;</span>
+  <span class="token property">margin-left</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5982;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x5B9E;&#x73B0;&#x4E86; CSS &#x7684;&#x62BD;&#x53D6;&#x3002;</p>
+<h3 id="38-&#x4F18;&#x5316;-&#x62BD;&#x53D6;-js"><a name="38-&#x4F18;&#x5316;-&#x62BD;&#x53D6;-js" class="anchor-navigation-ex-anchor" href="#38-&#x4F18;&#x5316;-&#x62BD;&#x53D6;-js"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-three-eight" id="chapter-three-eight">3.8 &#x4F18;&#x5316;-&#x62BD;&#x53D6; JS</a></h3>
+<blockquote>
+<p><a href="#chapter-one">&#x8FD4;&#x56DE;&#x76EE;&#x5F55;</a></p>
+</blockquote>
+<p>&#x5728;&#x7B2C; 4 &#x7AE0;&#x5173;&#x4E8E;&#x7EC4;&#x4EF6;&#x7684;&#x4ECB;&#x7ECD;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8BB2;&#x5230;&#xFF1A;&#x4E00;&#x4E9B;&#x590D;&#x6742;&#x7684; JS &#x662F;&#x53EF;&#x4EE5;&#x62BD;&#x53D6;&#x51FA;&#x6765;&#xFF0C;&#x5E76;&#x4EE5;&#x7EC4;&#x4EF6;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x5D4C;&#x5165;&#x5230;&#x9700;&#x8981;&#x653E;&#x7F6E;&#x7684;&#x4F4D;&#x7F6E;&#x7684;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#xFF0C;&#x6211;&#x4EEC;&#x5728; JSX &#x8D8A;&#x5199;&#x8D8A;&#x591A;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x53EF;&#x4EE5;&#x5C06;&#x5217;&#x8868;&#x6E32;&#x67D3;&#x90A3;&#x90E8;&#x5206;&#x62BD;&#x53D6;&#x51FA;&#x6765;&#xFF0C;&#x4ECE;&#x800C;&#x7CBE;&#x7B80;&#x4E0B; JSX &#x5462;&#xFF1F;</p>
+<p>&#x7B54;&#x6848;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x770B;&#x4E0B;&#x5B9E;&#x73B0;&#xFF1A;</p>
+<blockquote>
+<p>TodoList.js</p>
+</blockquote>
+<pre class="language-"><code class="lang-js"><span class="token comment">// Fragment &#x662F;&#x4E00;&#x79CD;&#x5360;&#x4F4D;&#x7B26;&#x5F62;&#x5F0F;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E; Vue &#x7684; Template</span>
+<span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component<span class="token punctuation">,</span> Fragment <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// &#x5F15;&#x5165;&#x7EC4;&#x4EF6;</span>
+<span class="token keyword">import</span> TodoItem <span class="token keyword">from</span> <span class="token string">&apos;./TodoItem&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// &#x5F15;&#x7528;&#x6837;&#x5F0F;</span>
+<span class="token keyword">import</span> <span class="token string">&apos;./style.css&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">TodoList</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+
+  <span class="token comment">// &#x6784;&#x9020;&#x51FD;&#x6570;</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// &#x5B9A;&#x4E49;&#x6570;&#x636E;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+      inputValue<span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span><span class="token punctuation">,</span>
+      list<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>handleInputChange <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleInputChange</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>handleBtnClick <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleBtnClick</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>handleItemDelete <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleItemDelete</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// &#x6E32;&#x67D3;&#x9875;&#x9762;</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>Fragment<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>label htmlFor<span class="token operator">=</span><span class="token string">&quot;insertArea&quot;</span><span class="token operator">&gt;</span>&#x8F93;&#x5165;&#x5185;&#x5BB9;&#xFF1A;<span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+          <span class="token punctuation">{</span><span class="token comment">/* &#x5355;&#x9879;&#x6570;&#x636E;&#x7ED1;&#x5B9A; */</span><span class="token punctuation">}</span>
+          <span class="token punctuation">{</span><span class="token comment">/* &#x5728; React &#x4E2D;&#xFF0C;&#x7ED1;&#x5B9A;&#x65F6;&#x95F4;&#x7684;&#xFF0C;&#x4E00;&#x822C;&#x4E3A;&#x534A;&#x9A7C;&#x5CF0;&#x5F62;&#x5F0F; */</span><span class="token punctuation">}</span>
+          <span class="token operator">&lt;</span>input 
+            id<span class="token operator">=</span><span class="token string">&quot;insertArea&quot;</span>
+            type<span class="token operator">=</span><span class="token string">&quot;text&quot;</span> 
+            value<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>inputValue<span class="token punctuation">}</span>
+            onChange<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleInputChange<span class="token punctuation">}</span>
+          <span class="token operator">/</span><span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleBtnClick<span class="token punctuation">}</span><span class="token operator">&gt;</span>&#x63D0;&#x4EA4;<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>ul<span class="token operator">&gt;</span>
+          <span class="token punctuation">{</span><span class="token comment">/* &#x7CBE;&#x7B80; JSX&#xFF0C;&#x5C06;&#x90E8;&#x5206;&#x62BD;&#x53D6;&#x51FA;&#x6765; */</span><span class="token punctuation">}</span>
+          <span class="token punctuation">{</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getTodoItem</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>Fragment<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// &#x83B7;&#x53D6;&#x5355;&#x72EC;&#x9879;</span>
+  <span class="token function">getTodoItem</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>list<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>TodoItem 
+          key<span class="token operator">=</span><span class="token punctuation">{</span>index<span class="token punctuation">}</span>
+          item<span class="token operator">=</span><span class="token punctuation">{</span>item<span class="token punctuation">}</span> 
+          index<span class="token operator">=</span><span class="token punctuation">{</span>index<span class="token punctuation">}</span>
+          handleItemDelete<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleItemDelete<span class="token punctuation">}</span>
+        <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// &#x65B9;&#x6CD5;&#x4F53; - &#x8F93;&#x5165;&#x5185;&#x5BB9;</span>
+  <span class="token function">handleInputChange</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> value <span class="token operator">=</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+      inputValue<span class="token punctuation">:</span> value
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// &#x65B9;&#x6CD5;&#x4F53; - &#x70B9;&#x51FB;&#x63D0;&#x4EA4;</span>
+  <span class="token function">handleBtnClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> list <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>list<span class="token punctuation">,</span>
+          inputValue <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>inputValue<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+      list<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token operator">...</span>list<span class="token punctuation">,</span> inputValue<span class="token punctuation">]</span><span class="token punctuation">,</span>
+      inputValue<span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// &#x65B9;&#x6CD5;&#x4F53; - &#x5220;&#x9664;&#x9879;&#x76EE;</span>
+  <span class="token function">handleItemDelete</span><span class="token punctuation">(</span><span class="token parameter">index</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// immutable - state &#x4E0D;&#x5141;&#x8BB8;&#x505A;&#x4EFB;&#x4F55;&#x6539;&#x53D8;</span>
+    <span class="token keyword">const</span> list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>this<span class="token punctuation">.</span>state<span class="token punctuation">.</span>list<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    list<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+      list<span class="token punctuation">:</span> list
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> TodoList<span class="token punctuation">;</span>
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x5173;&#x6CE8;&#x4E0B; TodoList.js &#x7684;&#x6539;&#x53D8;&#xFF1A;</p>
+<p><strong>&#x9996;&#x5148;</strong>. &#x6211;&#x4EEC;&#x5728; <code>constructor</code> &#x4E2D;&#xFF0C;&#x5C06;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x4E86;&#x63D0;&#x524D;&#x5B9A;&#x4E49;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">this</span><span class="token punctuation">.</span>handleInputChange <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleInputChange</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x8FD9;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x4E0B;&#x9762;&#x5C31;&#x4E0D;&#x7528;&#x5199; <code>.bind(this)</code> &#x5F62;&#x5F0F;&#x4E86;&#x3002;</p>
+<p><strong>&#x7136;&#x540E;</strong>. &#x6211;&#x4EEC;&#x4FEE;&#x6539;&#x4E86;&#x4E0B; <code>this.setState()</code> &#x7684;&#x5F62;&#x5F0F;&#xFF1A;</p>
+<blockquote>
+<p>&#x539F;&#x5199;&#x6CD5;&#xFF1A;</p>
+</blockquote>
+<pre class="language-"><code class="lang-js"><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  list<span class="token punctuation">:</span> list
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<blockquote>
+<p>&#x73B0;&#x5199;&#x6CD5;&#xFF1A;</p>
+</blockquote>
+<pre class="language-"><code class="lang-js"><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+  list<span class="token punctuation">:</span> list
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x56E0;&#x4E3A; React 16 &#x7248;&#x672C;&#x8FDB;&#x884C;&#x4E86;&#x66F4;&#x65B0;&#xFF0C;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x6BD4;&#x4E4B;&#x524D;&#x7684;&#x597D;&#xFF0C;&#x81F3;&#x4E8E;&#x597D;&#x5728;&#x54EA;&#xFF0C;&#x54B1;&#x5148;&#x4E0D;&#x5173;&#x5FC3;&#xFF0C;&#x4EE5;&#x540E;&#x5C31;&#x7528;&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x4E86;&#x3002;</p>
+<p><strong>&#x6700;&#x540E;</strong>&#xFF0C;&#x6211;&#x4EEC;&#x5F15;&#x7528;&#x4E86;&#x7EC4;&#x4EF6;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> TodoItem <span class="token keyword">from</span> <span class="token string">&apos;./TodoItem&apos;</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x5E76;&#x4E14;&#x5C06;&#x7EC4;&#x4EF6;&#x653E;&#x5230;&#x65B9;&#x6CD5;&#x4F53;&#xFF1A;<code>this.getTodoItem()</code> &#x4E2D;&#xFF0C;&#x800C; <code>this.getTodoItem()</code> &#x7684;&#x5B9A;&#x4E49;&#x662F;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// &#x83B7;&#x53D6;&#x5355;&#x72EC;&#x9879;</span>
+<span class="token function">getTodoItem</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+ <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>list<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+   <span class="token keyword">return</span> <span class="token punctuation">(</span>
+     <span class="token operator">&lt;</span>TodoItem 
+       key<span class="token operator">=</span><span class="token punctuation">{</span>index<span class="token punctuation">}</span>
+       item<span class="token operator">=</span><span class="token punctuation">{</span>item<span class="token punctuation">}</span> 
+       index<span class="token operator">=</span><span class="token punctuation">{</span>index<span class="token punctuation">}</span>
+       handleItemDelete<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleItemDelete<span class="token punctuation">}</span>
+     <span class="token operator">/</span><span class="token operator">&gt;</span>
+   <span class="token punctuation">)</span>
+ <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x81EA;&#x5B9A;&#x4E49;&#x503C;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x5C06;&#x6570;&#x636E; <code>key</code>&#x3001;<code>item</code>&#x3001;<code>index</code> &#x4F20;&#x9012;&#x7ED9;&#x4E86;&#x5B50;&#x7EC4;&#x4EF6; <code>TodoItem</code>&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x901A;&#x8FC7; <code>handleItemDelete</code>&#xFF0C;&#x5C06;&#x81EA;&#x5DF1;&#x7684;&#x65B9;&#x6CD5;&#x4F20;&#x9012;&#x7ED9;&#x4E86;&#x5B50;&#x7EC4;&#x4EF6;&#xFF0C;&#x8FD9;&#x6837;&#x5B50;&#x7EC4;&#x4EF6;&#x5C31;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x7236;&#x7EC4;&#x4EF6;&#x7684;&#x65B9;&#x6CD5;&#x4E86;&#xFF1A;</p>
+<blockquote>
+<p>TodoItem.js</p>
+</blockquote>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">TodoItem</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// &#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x53EF;&#x4EE5;&#x8282;&#x7701;&#x6027;&#x80FD;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>handleClick <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleClick</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> item <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>span<span class="token operator">&gt;</span><span class="token punctuation">{</span>item<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>span className<span class="token operator">=</span><span class="token string">&quot;icon-close&quot;</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleClick<span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token constant">X</span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">handleClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> handleItemDelete<span class="token punctuation">,</span> index <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">;</span>
+    <span class="token function">handleItemDelete</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> TodoItem<span class="token punctuation">;</span>
+</code></pre>
+<p>&#x8FD9;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x5B8C;&#x6210;&#x4E86;&#x7EC4;&#x4EF6;&#x7684;&#x62BD;&#x53D6;&#xFF0C;&#x5E76;&#x5B66;&#x4F1A;&#x4E86;</p>
+<ul>
+<li>&#x7236;&#x7EC4;&#x4EF6;&#x4F20;&#x9012;&#x503C;&#x7ED9;&#x5B50;&#x7EC4;&#x4EF6;</li>
+<li>&#x5B50;&#x7EC4;&#x4EF6;&#x8C03;&#x7528;&#x7236;&#x7EC4;&#x4EF6;&#x7684;&#x65B9;&#x6CD5;</li>
+</ul>
+<p>&#x7531;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x53EF;&#x4EE5;&#x7F16;&#x5199;&#x66F4;&#x4E30;&#x5BCC;&#x5065;&#x5168;&#x7684;&#x9879;&#x76EE;&#x4E86;&#x3002;</p>
+<blockquote>
+<p>&#x672C;&#x6587;&#x4EE3;&#x7801;&#x5730;&#x5740;&#xFF1A;<a href="https://github.com/LiangJunrong/React" target="_blank">React &#x7CFB;&#x5217;&#x6E90;&#x7801;&#x5730;&#x5740;</a></p>
+</blockquote>
+<h2 id="&#x56DB;-&#x603B;&#x7ED3;"><a name="&#x56DB;-&#x603B;&#x7ED3;" class="anchor-navigation-ex-anchor" href="#&#x56DB;-&#x603B;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-four" id="chapter-four">&#x56DB; &#x603B;&#x7ED3;</a></h2>
+<blockquote>
+<p><a href="#chapter-one">&#x8FD4;&#x56DE;&#x76EE;&#x5F55;</a></p>
+</blockquote>
+<p>&#x5728;&#x6211;&#x4EEC;&#x5B66;&#x4E60;&#x4EFB;&#x610F;&#x4E00;&#x95E8;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x5927;&#x591A;&#x5C31;&#x662F;&#x4E0A;&#x624B; &#x201C;Hello World&#xFF01;&#x201D; &#x7F16;&#x7A0B;~</p>
+<p>&#x7136;&#x540E;&#x505A;&#x5C0F;&#x6848;&#x4F8B;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x559C;&#x6B22;&#x6765;&#x4E2A; TodoList&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x80FD;&#x8BB2;&#x6E05;&#x695A;&#x4E00;&#x4E9B;&#x6709;&#x5173;&#x57FA;&#x7840;&#x7684;&#x77E5;&#x8BC6;&#x70B9;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x6211;&#x4EEC;&#x56DE;&#x987E;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x5F00;&#x53D1; React &#x7684; TodoList &#x6709;&#x5565;&#x6536;&#x83B7;&#xFF1A;</p>
+<ol>
+<li>create-react-app &#x7684;&#x5B89;&#x88C5;&#x53CA;&#x5F00;&#x53D1;&#x3002;</li>
+<li>&#x7EC4;&#x4EF6;&#x5316;&#x7684;&#x601D;&#x60F3;&#x53CA;&#x5728; create-react-app &#x4E2D;&#x5173;&#x4E8E;&#x7EC4;&#x4EF6;&#x5316;&#x7684;&#x5E94;&#x7528;&#x3002;</li>
+<li>React &#x5173;&#x4E8E;&#x6570;&#x636E; data &#x4EE5;&#x53CA;&#x65B9;&#x6CD5; methods &#x7684;&#x5B9A;&#x4E49;&#x53CA;&#x4F7F;&#x7528;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#x3002;</li>
+<li>&#x5C06;&#x5927;&#x7684;&#x7EC4;&#x4EF6;&#x62C6;&#x5206;&#x6210;&#x5C0F;&#x7EC4;&#x4EF6;&#xFF0C;&#x5E76;&#x5B9E;&#x73B0;&#x7236;&#x5B50;&#x7EC4;&#x4EF6;&#x901A;&#x8BAF;&#xFF08;&#x7236;&#x7EC4;&#x4EF6;&#x4F20;&#x9012;&#x53C2;&#x6570;&#x7ED9;&#x5B50;&#x7EC4;&#x4EF6;&#xFF0C;&#x5B50;&#x7EC4;&#x4EF6;&#x8C03;&#x7528;&#x7236;&#x7EC4;&#x4EF6;&#x7684;&#x65B9;&#x6CD5;&#xFF09;</li>
+</ol>
+<p>&#x81F3;&#x6B64;&#xFF0C;<strong>jsliang</strong> &#x5C31;&#x7CBE;&#x901A; jQuery&#x3001;Vue&#x3001;React &#x7F16;&#x5199; TodoList &#x4E86;&#xFF0C;&#x54C8;&#x54C8;&#xFF01;</p>
+<h2 id="&#x4E94;-&#x53C2;&#x8003;&#x6587;&#x732E;"><a name="&#x4E94;-&#x53C2;&#x8003;&#x6587;&#x732E;" class="anchor-navigation-ex-anchor" href="#&#x4E94;-&#x53C2;&#x8003;&#x6587;&#x732E;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-five" id="chapter-five">&#x4E94; &#x53C2;&#x8003;&#x6587;&#x732E;</a></h2>
+<blockquote>
+<p><a href="#chapter-one">&#x8FD4;&#x56DE;&#x76EE;&#x5F55;</a></p>
+</blockquote>
+<ol>
+<li><a href="https://www.cnblogs.com/clover77/p/9394514.html" target="_blank">&#x300A;React.Component &#x4E0E; React.PureComponent&#xFF08;React&#x4E4B;&#x6027;&#x80FD;&#x4F18;&#x5316;&#xFF09;&#x300B;</a></li>
+<li><a href="https://www.jianshu.com/p/ec7c2bab16cc" target="_blank">&#x300A;visual studio code + react &#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;&#x300B;</a></li>
+<li><a href="https://www.jianshu.com/p/8f6dd832e57a" target="_blank">&#x300A;react &#x4E2D; constructor() &#x548C; super() &#x5230;&#x5E95;&#x662F;&#x4E2A;&#x5565;&#xFF1F;&#x300B;</a></li>
+</ol>
+<hr>
+<blockquote>
+<p><strong>jsliang</strong> &#x5E7F;&#x544A;&#x63A8;&#x9001;&#xFF1A;<br>&#x4E5F;&#x8BB8;&#x5C0F;&#x4F19;&#x4F34;&#x60F3;&#x4E86;&#x89E3;&#x4E0B;&#x4E91;&#x670D;&#x52A1;&#x5668;<br>&#x6216;&#x8005;&#x5C0F;&#x4F19;&#x4F34;&#x60F3;&#x4E70;&#x4E00;&#x53F0;&#x4E91;&#x670D;&#x52A1;&#x5668;<br>&#x6216;&#x8005;&#x5C0F;&#x4F19;&#x4F34;&#x9700;&#x8981;&#x7EED;&#x8D39;&#x4E91;&#x670D;&#x52A1;&#x5668;<br>&#x6B22;&#x8FCE;&#x70B9;&#x51FB; <strong><a href="https://github.com/LiangJunrong/document-library/blob/master/other-library/Monologue/%E7%A8%B3%E9%A3%9F%E8%89%B0%E9%9A%BE.md" target="_blank">&#x4E91;&#x670D;&#x52A1;&#x5668;&#x63A8;&#x5E7F;</a></strong> &#x67E5;&#x770B;&#xFF01;</p>
+</blockquote>
+<p><a href="https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=w7hismrh" target="_blank"><img src="../../public-repertory/img/z-small-seek-ali-3.jpg" alt="&#x56FE;"></a>
+<a href="https://cloud.tencent.com/redirect.php?redirect=1014&amp;cps_key=49f647c99fce1a9f0b4e1eeb1be484c9&amp;from=console" target="_blank"><img src="../../public-repertory/img/z-small-seek-tencent-2.jpg" alt="&#x56FE;"></a></p>
+<blockquote>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="&#x77E5;&#x8BC6;&#x5171;&#x4EAB;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">jsliang &#x7684;&#x6587;&#x6863;&#x5E93;</span> &#x7531; <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/LiangJunrong/document-library" property="cc:attributionName" rel="cc:attributionURL" target="_blank">&#x6881;&#x5CFB;&#x8363;</a> &#x91C7;&#x7528; <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB; &#x7F72;&#x540D;-&#x975E;&#x5546;&#x4E1A;&#x6027;&#x4F7F;&#x7528;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0 &#x56FD;&#x9645; &#x8BB8;&#x53EF;&#x534F;&#x8BAE;</a>&#x8FDB;&#x884C;&#x8BB8;&#x53EF;&#x3002;<br>&#x57FA;&#x4E8E;<a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/LiangJunrong/document-library" rel="dct:source" target="_blank">https://github.com/LiangJunrong/document-library</a>&#x4E0A;&#x7684;&#x4F5C;&#x54C1;&#x521B;&#x4F5C;&#x3002;<br>&#x672C;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;&#x6388;&#x6743;&#x4E4B;&#x5916;&#x7684;&#x4F7F;&#x7528;&#x6743;&#x9650;&#x53EF;&#x4EE5;&#x4ECE; <a xmlns:cc="http://creativecommons.org/ns#" href="https://creativecommons.org/licenses/by-nc-sa/2.5/cn/" rel="cc:morePermissions" target="_blank">https://creativecommons.org/licenses/by-nc-sa/2.5/cn/</a> &#x5904;&#x83B7;&#x5F97;&#x3002; </p>
+</blockquote>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; jsliang.top 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-05-31 15:07:51
+</span></footer>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>var gitalk = new Gitalk({"clientID": "ed83a3545da1ea821c9f", "clientSecret": "1e2517a9549f0bca9dc508fadbbc32aabb7d2c5f", "repo": "document-library", "owner": "LiangJunrong", "admin": ["LiangJunrong"], "id": location.pathname, "distractionFreeMode": false}); gitalk.render("gitalk-container"); </script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="React-list-React-Router.html" class="navigation navigation-prev " aria-label="Previous page: React List - React Router ✔">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="React-demo-two-TodoList-upgrade.html" class="navigation navigation-next " aria-label="Next page: React Demo Two - TodoList 升级 ✔">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"React Demo One - TodoList ✔","level":"1.7.4.7","depth":3,"next":{"title":"React Demo Two - TodoList 升级 ✔","level":"1.7.4.8","depth":3,"path":"JavaScript-library/React/React-demo-two-TodoList-upgrade.md","ref":"./JavaScript-library/React/React-demo-two-TodoList-upgrade.md","articles":[]},"previous":{"title":"React List - React Router ✔","level":"1.7.4.6","depth":3,"path":"JavaScript-library/React/React-list-React-Router.md","ref":"./JavaScript-library/React/React-list-React-Router.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","prism","-highlight","copy-code-button","search-pro","-search","-lunr","expandable-chapters","splitter","-sharing","github-buttons","donate","tbfed-pagefooter","baidu-tongji","anchor-navigation-ex"],"styles":{"website":"./public-repertory/css/gitbook-configure.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy jsliang.top 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"shell":"bash"}},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"55e7dfe47f4dc1c018d4042fdfa62565"},"splitter":{},"search-pro":{},"donate":{"alipay":"https://github.com/LiangJunrong/document-library/blob/master/public-repertory/img/seek-reward.jpg?raw=true","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"https://github.com/LiangJunrong/document-library/blob/master/public-repertory/img/seek-reward.png?raw=true","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"github-buttons":{"buttons":[{"user":"LiangJunrong","repo":"document-library","type":"star","count":true,"size":"small"},{"user":"LiangJunrong","width":"160","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"梁峻荣 - jsliang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"jsliang 的文档库","language":"zh-hans","gitbook":"*","description":"jsliang 的文档库. 里面包含了个人撰写的所有前端文章，例如 Vue、React,、ECharts、微信小程序等……"},"file":{"path":"JavaScript-library/React/React-demo-one-TodoList.md","mtime":"2019-05-31T07:07:51.415Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-31T09:36:34.428Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
