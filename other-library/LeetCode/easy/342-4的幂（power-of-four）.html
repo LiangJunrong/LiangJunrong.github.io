@@ -1,0 +1,4360 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>342 - 4的幂（power-of-four） ✔ · jsliang 的文档库</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="梁峻荣 - jsliang">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../public-repertory/css/gitbook-configure.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="344-反转字符串（reverse-string）.html" />
+    
+    
+    <link rel="prev" href="326-3的幂（power-of-three）.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"LiangJunrong","repo":"document-library","type":"star","count":true,"size":"small"},{"user":"LiangJunrong","width":"160","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../SUMMARY.html">
+            
+                <a href="../../../SUMMARY.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../news.html">
+            
+                <a href="../../../news.html">
+            
+                    
+                    更新记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../message-board.html">
+            
+                <a href="../../../message-board.html">
+            
+                    
+                    留言板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../../friendship-links.html">
+            
+                <a href="../../../friendship-links.html">
+            
+                    
+                    友情链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../../CSS-library/">
+            
+                <a href="../../../CSS-library/">
+            
+                    
+                    CSS 资料室
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../../CSS-library/CSS-base/">
+            
+                <a href="../../../CSS-library/CSS-base/">
+            
+                    
+                    CSS 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../../../CSS-library/CSS-base/CSS-reset.html">
+            
+                <a href="../../../CSS-library/CSS-base/CSS-reset.html">
+            
+                    
+                    CSS 重置 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../../CSS-library/layout/">
+            
+                <a href="../../../CSS-library/layout/">
+            
+                    
+                    CSS 布局
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="../../../CSS-library/layout/Flex.html">
+            
+                <a href="../../../CSS-library/layout/Flex.html">
+            
+                    
+                    Flex 布局 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../../HTML-library/">
+            
+                <a href="../../../HTML-library/">
+            
+                    
+                    HTML 资料室
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../../JavaScript-library/">
+            
+                <a href="../../../JavaScript-library/">
+            
+                    
+                    JavaScript 资料室
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../../JavaScript-library/JavaScript/">
+            
+                <a href="../../../JavaScript-library/JavaScript/">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.1" data-path="../../../JavaScript-library/JavaScript/Function/">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/">
+            
+                    
+                    Function
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.1.1" data-path="../../../JavaScript-library/JavaScript/Function/charCodeAt.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/charCodeAt.html">
+            
+                    
+                    方法 - charCodeAt() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.2" data-path="../../../JavaScript-library/JavaScript/Function/filter.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/filter.html">
+            
+                    
+                    方法 - filter() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.3" data-path="../../../JavaScript-library/JavaScript/Function/forEach.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/forEach.html">
+            
+                    
+                    方法 - forEach() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.4" data-path="../../../JavaScript-library/JavaScript/Function/fromCharCode.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/fromCharCode.html">
+            
+                    
+                    方法 - fromCharCode() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.5" data-path="../../../JavaScript-library/JavaScript/Function/includes.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/includes.html">
+            
+                    
+                    方法 - includes() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.6" data-path="../../../JavaScript-library/JavaScript/Function/indexOf.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/indexOf.html">
+            
+                    
+                    方法 - indexOf() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.7" data-path="../../../JavaScript-library/JavaScript/Function/join.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/join.html">
+            
+                    
+                    方法 - join() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.8" data-path="../../../JavaScript-library/JavaScript/Function/map.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/map.html">
+            
+                    
+                    方法 - map() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.9" data-path="../../../JavaScript-library/JavaScript/Function/padStart.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/padStart.html">
+            
+                    
+                    方法 - padStart() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.10" data-path="../../../JavaScript-library/JavaScript/Function/parseInt.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/parseInt.html">
+            
+                    
+                    方法 - parseInt() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.11" data-path="../../../JavaScript-library/JavaScript/Function/pop.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/pop.html">
+            
+                    
+                    方法 - pop() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.12" data-path="../../../JavaScript-library/JavaScript/Function/push.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/push.html">
+            
+                    
+                    方法 - push() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.13" data-path="../../../JavaScript-library/JavaScript/Function/reduce.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/reduce.html">
+            
+                    
+                    方法 - reduce() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.14" data-path="../../../JavaScript-library/JavaScript/Function/replace.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/replace.html">
+            
+                    
+                    方法 - replace() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.15" data-path="../../../JavaScript-library/JavaScript/Function/reverse.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/reverse.html">
+            
+                    
+                    方法 - reverse() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.16" data-path="../../../JavaScript-library/JavaScript/Function/shift.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/shift.html">
+            
+                    
+                    方法 - shift() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.17" data-path="../../../JavaScript-library/JavaScript/Function/slice.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/slice.html">
+            
+                    
+                    方法 - slice() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.18" data-path="../../../JavaScript-library/JavaScript/Function/sort.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/sort.html">
+            
+                    
+                    方法 - sort() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.19" data-path="../../../JavaScript-library/JavaScript/Function/splice.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/splice.html">
+            
+                    
+                    方法 - splice() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.20" data-path="../../../JavaScript-library/JavaScript/Function/split.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/split.html">
+            
+                    
+                    方法 - split() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.21" data-path="../../../JavaScript-library/JavaScript/Function/substring.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/substring.html">
+            
+                    
+                    方法 - substring() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.22" data-path="../../../JavaScript-library/JavaScript/Function/toLocaleLowerCase.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/toLocaleLowerCase.html">
+            
+                    
+                    方法 - toLocaleLowerCase() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.23" data-path="../../../JavaScript-library/JavaScript/Function/toString.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/toString.html">
+            
+                    
+                    方法 - toString() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.1.24" data-path="../../../JavaScript-library/JavaScript/Function/unshift.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Function/unshift.html">
+            
+                    
+                    方法 - unshift() ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2" data-path="../../../JavaScript-library/JavaScript/Object/">
+            
+                <a href="../../../JavaScript-library/JavaScript/Object/">
+            
+                    
+                    Object
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.2.1" data-path="../../../JavaScript-library/JavaScript/Object/Map.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Object/Map.html">
+            
+                    
+                    对象 - Map ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2.2" data-path="../../../JavaScript-library/JavaScript/Object/Math.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Object/Math.html">
+            
+                    
+                    对象 - Math ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2.3" data-path="../../../JavaScript-library/JavaScript/Object/Number.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Object/Number.html">
+            
+                    
+                    对象 - Number ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2.4" data-path="../../../JavaScript-library/JavaScript/Object/RegExp.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Object/RegExp.html">
+            
+                    
+                    对象 - RegExp ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2.5" data-path="../../../JavaScript-library/JavaScript/Object/Set.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Object/Set.html">
+            
+                    
+                    对象 - Set ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2.6" data-path="../../../JavaScript-library/JavaScript/Object/String.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Object/String.html">
+            
+                    
+                    对象 - String ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.3" data-path="../../../JavaScript-library/JavaScript/Other/">
+            
+                <a href="../../../JavaScript-library/JavaScript/Other/">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.3.1" data-path="../../../JavaScript-library/JavaScript/Other/DeleteArrrayItem.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Other/DeleteArrrayItem.html">
+            
+                    
+                    删除数组项目的技巧 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.3.2" data-path="../../../JavaScript-library/JavaScript/Other/Promise.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Other/Promise.html">
+            
+                    
+                    ES6学习 - 1 - Promise ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.3.3" data-path="../../../JavaScript-library/JavaScript/Other/prototype&constructor.html">
+            
+                <a href="../../../JavaScript-library/JavaScript/Other/prototype&constructor.html">
+            
+                    
+                    JavaScript 之 构造函数与原型对象 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../../JavaScript-library/jQuery/">
+            
+                <a href="../../../JavaScript-library/jQuery/">
+            
+                    
+                    jQuery
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.2.1" data-path="../../../JavaScript-library/jQuery/jQuery-base.html">
+            
+                <a href="../../../JavaScript-library/jQuery/jQuery-base.html">
+            
+                    
+                    jQuery 基础 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.2" data-path="../../../JavaScript-library/jQuery/jQuery-frequently-used.html">
+            
+                <a href="../../../JavaScript-library/jQuery/jQuery-frequently-used.html">
+            
+                    
+                    jQuery 工作常用解决方案 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../../JavaScript-library/Vue/">
+            
+                <a href="../../../JavaScript-library/Vue/">
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1" data-path="../../../JavaScript-library/Vue/Vue-base.html">
+            
+                <a href="../../../JavaScript-library/Vue/Vue-base.html">
+            
+                    
+                    Vue 基础 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2" data-path="../../../JavaScript-library/Vue/Vue-official-documents.html">
+            
+                <a href="../../../JavaScript-library/Vue/Vue-official-documents.html">
+            
+                    
+                    Vue 官方文档二三事 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.3" data-path="../../../JavaScript-library/Vue/Vue-prepare.html">
+            
+                <a href="../../../JavaScript-library/Vue/Vue-prepare.html">
+            
+                    
+                    Vue 开发准备 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.4" data-path="../../../JavaScript-library/Vue/Axios.html">
+            
+                <a href="../../../JavaScript-library/Vue/Axios.html">
+            
+                    
+                    Axios ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.5" data-path="../../../JavaScript-library/Vue/Vue-Router.html">
+            
+                <a href="../../../JavaScript-library/Vue/Vue-Router.html">
+            
+                    
+                    Vue Router ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.6" data-path="../../../JavaScript-library/Vue/Vue-upload-file.html">
+            
+                <a href="../../../JavaScript-library/Vue/Vue-upload-file.html">
+            
+                    
+                    Vue 上传文件 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.7" data-path="../../../JavaScript-library/Vue/Vue-deployment-optimization.html">
+            
+                <a href="../../../JavaScript-library/Vue/Vue-deployment-optimization.html">
+            
+                    
+                    Vue 部署优化 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.8" data-path="../../../JavaScript-library/Vue/Vue-demo-one.html">
+            
+                <a href="../../../JavaScript-library/Vue/Vue-demo-one.html">
+            
+                    
+                    Vue Demo One - 功成千骨 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.9" data-path="../../../JavaScript-library/Vue/Vue-demo-two.html">
+            
+                <a href="../../../JavaScript-library/Vue/Vue-demo-two.html">
+            
+                    
+                    Vue Demo Two - 创意网站 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../../JavaScript-library/React/">
+            
+                <a href="../../../JavaScript-library/React/">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.4.1" data-path="../../../JavaScript-library/React/React-base.html">
+            
+                <a href="../../../JavaScript-library/React/React-base.html">
+            
+                    
+                    React 基础 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.2" data-path="../../../JavaScript-library/React/React-prepare.html">
+            
+                <a href="../../../JavaScript-library/React/React-prepare.html">
+            
+                    
+                    React 开发准备 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.3" data-path="../../../JavaScript-library/React/React-list.html">
+            
+                <a href="../../../JavaScript-library/React/React-list.html">
+            
+                    
+                    React 知识点清单 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.4" data-path="../../../JavaScript-library/React/React-list-Create-React-App.html">
+            
+                <a href="../../../JavaScript-library/React/React-list-Create-React-App.html">
+            
+                    
+                    React List - Create React App ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.5" data-path="../../../JavaScript-library/React/React-list-React-Redux.html">
+            
+                <a href="../../../JavaScript-library/React/React-list-React-Redux.html">
+            
+                    
+                    React List - React Redux ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.6" data-path="../../../JavaScript-library/React/React-list-React-Router.html">
+            
+                <a href="../../../JavaScript-library/React/React-list-React-Router.html">
+            
+                    
+                    React List - React Router ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.7" data-path="../../../JavaScript-library/React/React-demo-one-TodoList.html">
+            
+                <a href="../../../JavaScript-library/React/React-demo-one-TodoList.html">
+            
+                    
+                    React Demo One - TodoList ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.8" data-path="../../../JavaScript-library/React/React-demo-two-TodoList-upgrade.html">
+            
+                <a href="../../../JavaScript-library/React/React-demo-two-TodoList-upgrade.html">
+            
+                    
+                    React Demo Two - TodoList 升级 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.9" data-path="../../../JavaScript-library/React/React-demo-three-JianShu.html">
+            
+                <a href="../../../JavaScript-library/React/React-demo-three-JianShu.html">
+            
+                    
+                    React Demo Three - 简书 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.10" data-path="../../../JavaScript-library/React/React-demo-four-JueJin.html">
+            
+                <a href="../../../JavaScript-library/React/React-demo-four-JueJin.html">
+            
+                    
+                    React Demo Four - 掘金 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.11" data-path="../../../JavaScript-library/React/React-demo-five-RegionalCircle.html">
+            
+                <a href="../../../JavaScript-library/React/React-demo-five-RegionalCircle.html">
+            
+                    
+                    React Demo Five - 员岗周边 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../../../JavaScript-library/Angular/">
+            
+                <a href="../../../JavaScript-library/Angular/">
+            
+                    
+                    Angular
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.5.1" data-path="../../../JavaScript-library/Angular/Angular-demo-one-Taskmgr.html">
+            
+                <a href="../../../JavaScript-library/Angular/Angular-demo-one-Taskmgr.html">
+            
+                    
+                    Angular Demo One - 打造企业级协作平台 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5.2" data-path="../../../JavaScript-library/Angular/Angular-demo-two-StockManagementPlatform.html">
+            
+                <a href="../../../JavaScript-library/Angular/Angular-demo-two-StockManagementPlatform.html">
+            
+                    
+                    Angular Demo Two - 股票管理平台 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../../../JavaScript-library/ECharts/">
+            
+                <a href="../../../JavaScript-library/ECharts/">
+            
+                    
+                    ECharts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.6.1" data-path="../../../JavaScript-library/ECharts/curriculum-vitae.html">
+            
+                <a href="../../../JavaScript-library/ECharts/curriculum-vitae.html">
+            
+                    
+                    ECharts 打造在线个人简历 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6.2" data-path="../../../JavaScript-library/ECharts/curriculum-vitae-improve.html">
+            
+                <a href="../../../JavaScript-library/ECharts/curriculum-vitae-improve.html">
+            
+                    
+                    ECharts 打造在线个人简历 【升级版】 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6.3" data-path="../../../JavaScript-library/ECharts/ECharts-Vue.html">
+            
+                <a href="../../../JavaScript-library/ECharts/ECharts-Vue.html">
+            
+                    
+                    ECharts + Vue 折腾记 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../../../JavaScript-library/design-pattern/">
+            
+                <a href="../../../JavaScript-library/design-pattern/">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.7.1" data-path="../../../JavaScript-library/design-pattern/design-pattern-chapter01.html">
+            
+                <a href="../../../JavaScript-library/design-pattern/design-pattern-chapter01.html">
+            
+                    
+                    设计模式手册 - 1 - 部署开发环境 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7.2" data-path="../../../JavaScript-library/design-pattern/design-pattern-chapter02.html">
+            
+                <a href="../../../JavaScript-library/design-pattern/design-pattern-chapter02.html">
+            
+                    
+                    设计模式手册 - 2 - 面向对象 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7.3" data-path="../../../JavaScript-library/design-pattern/design-pattern-chapter03.html">
+            
+                <a href="../../../JavaScript-library/design-pattern/design-pattern-chapter03.html">
+            
+                    
+                    设计模式手册 - 3 - 工厂模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7.4" data-path="../../../JavaScript-library/design-pattern/design-pattern-chapter04.html">
+            
+                <a href="../../../JavaScript-library/design-pattern/design-pattern-chapter04.html">
+            
+                    
+                    设计模式手册 - 4 - 单例模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7.5" data-path="../../../JavaScript-library/design-pattern/design-pattern-chapter05.html">
+            
+                <a href="../../../JavaScript-library/design-pattern/design-pattern-chapter05.html">
+            
+                    
+                    设计模式手册 - 5 - 适配器模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7.6" data-path="../../../JavaScript-library/design-pattern/design-pattern-chapter06.html">
+            
+                <a href="../../../JavaScript-library/design-pattern/design-pattern-chapter06.html">
+            
+                    
+                    设计模式手册 - 6 - 装饰器模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7.7" data-path="../../../JavaScript-library/design-pattern/design-pattern-chapter07.html">
+            
+                <a href="../../../JavaScript-library/design-pattern/design-pattern-chapter07.html">
+            
+                    
+                    设计模式手册 - 7 - 代理模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7.8" data-path="../../../JavaScript-library/design-pattern/design-pattern-chapter08.html">
+            
+                <a href="../../../JavaScript-library/design-pattern/design-pattern-chapter08.html">
+            
+                    
+                    设计模式手册 - 8 - 外观模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7.9" data-path="../../../JavaScript-library/design-pattern/design-pattern-chapter09.html">
+            
+                <a href="../../../JavaScript-library/design-pattern/design-pattern-chapter09.html">
+            
+                    
+                    设计模式手册 - 9 - 观察者模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7.10" data-path="../../../JavaScript-library/design-pattern/design-pattern-chapter10.html">
+            
+                <a href="../../../JavaScript-library/design-pattern/design-pattern-chapter10.html">
+            
+                    
+                    设计模式手册 - 10 - 迭代器模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7.11" data-path="../../../JavaScript-library/design-pattern/design-pattern-chapter11.html">
+            
+                <a href="../../../JavaScript-library/design-pattern/design-pattern-chapter11.html">
+            
+                    
+                    设计模式手册 - 11 - 状态模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7.12" data-path="../../../JavaScript-library/design-pattern/design-pattern-chapter12.html">
+            
+                <a href="../../../JavaScript-library/design-pattern/design-pattern-chapter12.html">
+            
+                    
+                    设计模式手册 - 12 - 其他模式 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7.13" data-path="../../../JavaScript-library/design-pattern/design-pattern-chapter13.html">
+            
+                <a href="../../../JavaScript-library/design-pattern/design-pattern-chapter13.html">
+            
+                    
+                    设计模式手册 - 13 - 综合应用 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    其他资料室
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../Git/">
+            
+                <a href="../../Git/">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1.1" data-path="../../Git/Git-study.html">
+            
+                <a href="../../Git/Git-study.html">
+            
+                    
+                    Git 学习 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../HTTP/">
+            
+                <a href="../../HTTP/">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.2.1" data-path="../../HTTP/HTTP-study.html">
+            
+                <a href="../../HTTP/HTTP-study.html">
+            
+                    
+                    HTTP 学习 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../../interview/">
+            
+                <a href="../../interview/">
+            
+                    
+                    面试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.3.1" data-path="../../interview/hearsay/">
+            
+                <a href="../../interview/hearsay/">
+            
+                    
+                    面试 - 道听途说
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.3.1.1" data-path="../../interview/hearsay/interview-one.html">
+            
+                <a href="../../interview/hearsay/interview-one.html">
+            
+                    
+                    第一篇 - 阿里系公司第一轮电面题 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2" data-path="../../interview/personal-experience/">
+            
+                <a href="../../interview/personal-experience/">
+            
+                    
+                    面试 - 亲身经历
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.3.2.1" data-path="../../interview/personal-experience/2019-interview-preparation.html">
+            
+                <a href="../../interview/personal-experience/2019-interview-preparation.html">
+            
+                    
+                    jsliang 的 2019 面试准备 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2.2" data-path="../../interview/personal-experience/2019-practical-round-one.html">
+            
+                <a href="../../interview/personal-experience/2019-practical-round-one.html">
+            
+                    
+                    2019 面试实战 - Round One ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2.3" data-path="../../interview/personal-experience/2019-practical-round-two.html">
+            
+                <a href="../../interview/personal-experience/2019-practical-round-two.html">
+            
+                    
+                    2019 面试实战 - Round Two ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2.4" data-path="../../interview/personal-experience/2019-practical-round-three.html">
+            
+                <a href="../../interview/personal-experience/2019-practical-round-three.html">
+            
+                    
+                    2019 面试实战 - Round Three ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2.5" data-path="../../interview/personal-experience/JavaScript-原型与原型链.html">
+            
+                <a href="../../interview/personal-experience/JavaScript-原型与原型链.html">
+            
+                    
+                    面试知识点 - JS 原型与原型链 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2.6" data-path="../../interview/personal-experience/JavaScript-防抖与节流.html">
+            
+                <a href="../../interview/personal-experience/JavaScript-防抖与节流.html">
+            
+                    
+                    面试知识点 - JS 防抖与节流 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2.7" data-path="../../interview/personal-experience/other-图片.html">
+            
+                <a href="../../interview/personal-experience/other-图片.html">
+            
+                    
+                    面试知识点 - 图片 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2.8" data-path="../../interview/personal-experience/other-简历.html">
+            
+                <a href="../../interview/personal-experience/other-简历.html">
+            
+                    
+                    面试知识点 - 简历 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    LeetCode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.4.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    LeetCode - 简单模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.4.1.1" data-path="001-两数之和（two-sum）.html">
+            
+                <a href="001-两数之和（two-sum）.html">
+            
+                    
+                    001 - 两数之和（two-sum） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.2" data-path="007-整数反转（reverse-integer）.html">
+            
+                <a href="007-整数反转（reverse-integer）.html">
+            
+                    
+                    007 - 整数反转（reverse-integer） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.3" data-path="009-回文数（palindrome-number）.html">
+            
+                <a href="009-回文数（palindrome-number）.html">
+            
+                    
+                    009 - 回文数（palindrome-number） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.4" data-path="013-罗马数字转整数（roman-to-integer）.html">
+            
+                <a href="013-罗马数字转整数（roman-to-integer）.html">
+            
+                    
+                    013 - 罗马数字转整数（roman-to-integer） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.5" data-path="014-最长公共前缀（longest-common-prefix）.html">
+            
+                <a href="014-最长公共前缀（longest-common-prefix）.html">
+            
+                    
+                    014 - 最长公共前缀（longest-common-prefix） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.6" data-path="020-有效的括号（valid-parentheses）.html">
+            
+                <a href="020-有效的括号（valid-parentheses）.html">
+            
+                    
+                    020 - 有效的括号（valid-parentheses） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.7" data-path="021-合并两个有序链表（merge-two-sorted-lists）.html">
+            
+                <a href="021-合并两个有序链表（merge-two-sorted-lists）.html">
+            
+                    
+                    021 - 合并两个有序链表（merge-two-sorted-lists） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.8" data-path="026-删除排序数组中的重复项（remove-duplicates-from-sorted-array）.html">
+            
+                <a href="026-删除排序数组中的重复项（remove-duplicates-from-sorted-array）.html">
+            
+                    
+                    026 - 删除排序数组中的重复项（remove-duplicates-from-sorted-array） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.9" data-path="027-移除元素（remove-element）.html">
+            
+                <a href="027-移除元素（remove-element）.html">
+            
+                    
+                    027 - 移除元素（remove-element） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.10" data-path="028-实现strStr（implement-strstr）.html">
+            
+                <a href="028-实现strStr（implement-strstr）.html">
+            
+                    
+                    028 - 实现strStr（implement-strstr） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.11" data-path="029-搜索插入位置（search-insert-position）.html">
+            
+                <a href="029-搜索插入位置（search-insert-position）.html">
+            
+                    
+                    029 - 搜索插入位置（search-insert-position） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.12" data-path="038-报数（count-and-say）.html">
+            
+                <a href="038-报数（count-and-say）.html">
+            
+                    
+                    038 - 报数（count-and-say） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.13" data-path="053-最大子序和（maximum-subarray）.html">
+            
+                <a href="053-最大子序和（maximum-subarray）.html">
+            
+                    
+                    053 - 最大子序和（maximum-subarray） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.14" data-path="058-最后一个单词的长度（length-of-last-word）.html">
+            
+                <a href="058-最后一个单词的长度（length-of-last-word）.html">
+            
+                    
+                    058 - 最后一个单词的长度（length-of-last-word） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.15" data-path="066-加一（plus-one）.html">
+            
+                <a href="066-加一（plus-one）.html">
+            
+                    
+                    066 - 加一（plus-one） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.16" data-path="067-二进制求和（add-binary）.html">
+            
+                <a href="067-二进制求和（add-binary）.html">
+            
+                    
+                    067 - 二进制求和（add-binary） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.17" data-path="069-x的平方根（sqrtx）.html">
+            
+                <a href="069-x的平方根（sqrtx）.html">
+            
+                    
+                    069 - x 的平方根（sqrtx） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.18" data-path="070-爬楼梯（climbing-stairs）.html">
+            
+                <a href="070-爬楼梯（climbing-stairs）.html">
+            
+                    
+                    070 - 爬楼梯（climbing-stairs） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.19" data-path="083-删除排序链表中的重复元素（remove-duplicates-from-sorted-list）.html">
+            
+                <a href="083-删除排序链表中的重复元素（remove-duplicates-from-sorted-list）.html">
+            
+                    
+                    083 - 删除排序链表中的重复元素（remove-duplicates-from-sorted-list） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.20" data-path="088-合并两个有序数组（merge-sorted-array）.html">
+            
+                <a href="088-合并两个有序数组（merge-sorted-array）.html">
+            
+                    
+                    088 - 合并两个有序数组（merge-sorted-array） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.21" data-path="100-相同的树（same-tree）.html">
+            
+                <a href="100-相同的树（same-tree）.html">
+            
+                    
+                    100 - 相同的树（same-tree） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.22" data-path="101-对称二叉树（symmetric-tree）.html">
+            
+                <a href="101-对称二叉树（symmetric-tree）.html">
+            
+                    
+                    101 - 对称二叉树（symmetric-tree） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.23" data-path="104-二叉树的最大深度（maximum-depth-of-binary-tree）.html">
+            
+                <a href="104-二叉树的最大深度（maximum-depth-of-binary-tree）.html">
+            
+                    
+                    104 - 二叉树的最大深度（maximum-depth-of-binary-tree） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.24" data-path="107-二叉树的层次遍历II（binary-tree-level-order-traversal-ii）.html">
+            
+                <a href="107-二叉树的层次遍历II（binary-tree-level-order-traversal-ii）.html">
+            
+                    
+                    107 - 二叉树的层次遍历 II（binary-tree-level-order-traversal-ii） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.25" data-path="108-将有序数组转换为二叉搜索树（convert-sorted-array-to-binary-search-tree）.html">
+            
+                <a href="108-将有序数组转换为二叉搜索树（convert-sorted-array-to-binary-search-tree）.html">
+            
+                    
+                    108 - 将有序数组转换为二叉搜索树（convert-sorted-array-to-binary-search-tree） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.26" data-path="110-平衡二叉树（balanced-binary-tree）.html">
+            
+                <a href="110-平衡二叉树（balanced-binary-tree）.html">
+            
+                    
+                    110 - 平衡二叉树（balanced-binary-tree） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.27" data-path="111-二叉树的最小深度（minimum-depth-of-binary-tree）.html">
+            
+                <a href="111-二叉树的最小深度（minimum-depth-of-binary-tree）.html">
+            
+                    
+                    111 - 二叉树的最小深度（minimum-depth-of-binary-tree） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.28" data-path="112-路径总和（path-sum）.html">
+            
+                <a href="112-路径总和（path-sum）.html">
+            
+                    
+                    112 - 路径总和（path-sum） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.29" data-path="118-杨辉三角（pascals-triangle）.html">
+            
+                <a href="118-杨辉三角（pascals-triangle）.html">
+            
+                    
+                    118 - 杨辉三角（pascals-triangle） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.30" data-path="119-杨辉三角II（pascals-triangle-ii）.html">
+            
+                <a href="119-杨辉三角II（pascals-triangle-ii）.html">
+            
+                    
+                    119 - 杨辉三角II（pascals-triangle-ii） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.31" data-path="121-买卖股票的最佳时机（best-time-to-buy-and-sell-stock）.html">
+            
+                <a href="121-买卖股票的最佳时机（best-time-to-buy-and-sell-stock）.html">
+            
+                    
+                    121 - 买卖股票的最佳时机（best-time-to-buy-and-sell-stock） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.32" data-path="122-买卖股票的最佳时机II（best-time-to-buy-and-sell-stock-ii）.html">
+            
+                <a href="122-买卖股票的最佳时机II（best-time-to-buy-and-sell-stock-ii）.html">
+            
+                    
+                    122 - 买卖股票的最佳时机II（best-time-to-buy-and-sell-stock-ii） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.33" data-path="125-验证回文串（valid-palindrome）.html">
+            
+                <a href="125-验证回文串（valid-palindrome）.html">
+            
+                    
+                    125 - 验证回文串（valid-palindrome） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.34" data-path="136-只出现一次的数字（single-number）.html">
+            
+                <a href="136-只出现一次的数字（single-number）.html">
+            
+                    
+                    136 - 只出现一次的数字（single-number） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.35" data-path="141-环形链表（linked-list-cycle）.html">
+            
+                <a href="141-环形链表（linked-list-cycle）.html">
+            
+                    
+                    141 - 环形链表（linked-list-cycle） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.36" data-path="155-最小栈（min-stack）.html">
+            
+                <a href="155-最小栈（min-stack）.html">
+            
+                    
+                    155 - 最小栈（min-stack） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.37" data-path="160-相交链表（intersection-of-two-linked-lists）.html">
+            
+                <a href="160-相交链表（intersection-of-two-linked-lists）.html">
+            
+                    
+                    160 - 相交链表（intersection-of-two-linked-lists） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.38" data-path="167-两数之和II（two-sum-ii-input-array-is-sorted）.html">
+            
+                <a href="167-两数之和II（two-sum-ii-input-array-is-sorted）.html">
+            
+                    
+                    167 - 两数之和II（two-sum-ii-input-array-is-sorted） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.39" data-path="168-Excel表列名称（excel-sheet-column-title）.html">
+            
+                <a href="168-Excel表列名称（excel-sheet-column-title）.html">
+            
+                    
+                    168 - Excel表列名称（excel-sheet-column-title） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.40" data-path="169-求众数（majority-element）.html">
+            
+                <a href="169-求众数（majority-element）.html">
+            
+                    
+                    169 - 求众数（majority-element） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.41" data-path="171-Excel表列序号（excel-sheet-column-number）.html">
+            
+                <a href="171-Excel表列序号（excel-sheet-column-number）.html">
+            
+                    
+                    171 - Excel表列序号（excel-sheet-column-number） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.42" data-path="172-阶乘后的零（factorial-trailing-zeroes）.html">
+            
+                <a href="172-阶乘后的零（factorial-trailing-zeroes）.html">
+            
+                    
+                    172 - 阶乘后的零（factorial-trailing-zeroes） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.43" data-path="189-旋转数组（rotate-array）.html">
+            
+                <a href="189-旋转数组（rotate-array）.html">
+            
+                    
+                    189 - 旋转数组（rotate-array） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.44" data-path="190-颠倒二进制位（reverse-bit）.html">
+            
+                <a href="190-颠倒二进制位（reverse-bit）.html">
+            
+                    
+                    190 - 颠倒二进制位（reverse-bit） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.45" data-path="191-位1的个数（number-of-1-bits）.html">
+            
+                <a href="191-位1的个数（number-of-1-bits）.html">
+            
+                    
+                    191 - 位1的个数（number-of-1-bits） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.46" data-path="198-打家劫舍（house-robber）.html">
+            
+                <a href="198-打家劫舍（house-robber）.html">
+            
+                    
+                    198 - 打家劫舍（house-robber） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.47" data-path="202-快乐数（happy-number）.html">
+            
+                <a href="202-快乐数（happy-number）.html">
+            
+                    
+                    202 - 快乐数（happy-number） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.48" data-path="203-移除链表元素（remove-linked-list-elements）.html">
+            
+                <a href="203-移除链表元素（remove-linked-list-elements）.html">
+            
+                    
+                    203 - 移除链表元素（remove-linked-list-elements） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.49" data-path="204-计数质数（count-primes）.html">
+            
+                <a href="204-计数质数（count-primes）.html">
+            
+                    
+                    204 - 计数质数（count-primes） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.50" data-path="205-同构字符串（isomorphic-strings）.html">
+            
+                <a href="205-同构字符串（isomorphic-strings）.html">
+            
+                    
+                    205 - 同构字符串（isomorphic-strings） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.51" data-path="206-反转链表（reverse-linked-list）.html">
+            
+                <a href="206-反转链表（reverse-linked-list）.html">
+            
+                    
+                    206 - 反转链表（reverse-linked-list） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.52" data-path="217-存在重复元素（contains-duplicate）.html">
+            
+                <a href="217-存在重复元素（contains-duplicate）.html">
+            
+                    
+                    217 - 存在重复元素（contains-duplicate） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.53" data-path="219-存在重复元素II（contains-duplicate-ii）.html">
+            
+                <a href="219-存在重复元素II（contains-duplicate-ii）.html">
+            
+                    
+                    219 - 存在重复元素II（contains-duplicate-ii） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.54" data-path="225-用队列实现栈（implement-stack-using-queues）.html">
+            
+                <a href="225-用队列实现栈（implement-stack-using-queues）.html">
+            
+                    
+                    225 - 用队列实现栈（implement-stack-using-queues） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.55" data-path="226-翻转二叉树（invert-binary-tree）.html">
+            
+                <a href="226-翻转二叉树（invert-binary-tree）.html">
+            
+                    
+                    226 - 翻转二叉树（invert-binary-tree） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.56" data-path="231-2的幂（power-of-two）.html">
+            
+                <a href="231-2的幂（power-of-two）.html">
+            
+                    
+                    231 - 2的幂（power-of-two） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.57" data-path="232-用栈实现队列（implement-queue-using-stacks）.html">
+            
+                <a href="232-用栈实现队列（implement-queue-using-stacks）.html">
+            
+                    
+                    232 - 用栈实现队列（implement-queue-using-stacks） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.58" data-path="234-回文链表（palindrome-linked-list）.html">
+            
+                <a href="234-回文链表（palindrome-linked-list）.html">
+            
+                    
+                    234 - 回文链表（palindrome-linked-list） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.59" data-path="235-二叉树的最近公共祖先（lowest-common-ancestor-of-a-binary-search-tree）.html">
+            
+                <a href="235-二叉树的最近公共祖先（lowest-common-ancestor-of-a-binary-search-tree）.html">
+            
+                    
+                    235 - 二叉树的最近公共祖先lowest-common-ancestor-of-a-binary-search-tree） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.60" data-path="237-删除链表中的节点（delete-node-in-a-linked-list）.html">
+            
+                <a href="237-删除链表中的节点（delete-node-in-a-linked-list）.html">
+            
+                    
+                    237 - 删除链表中的节点（delete-node-in-a-linked-list） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.61" data-path="242-有效的字母异位词（valid-anagram）.html">
+            
+                <a href="242-有效的字母异位词（valid-anagram）.html">
+            
+                    
+                    242 - 有效的字母异位词（valid-anagram） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.62" data-path="257-二叉树的所有路径（binary-tree-paths）.html">
+            
+                <a href="257-二叉树的所有路径（binary-tree-paths）.html">
+            
+                    
+                    257 - 二叉树的所有路径（binary-tree-paths） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.63" data-path="258-各位相加（add-digits）.html">
+            
+                <a href="258-各位相加（add-digits）.html">
+            
+                    
+                    258 - 各位相加（add-digits） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.64" data-path="263-丑数（ugly-number）.html">
+            
+                <a href="263-丑数（ugly-number）.html">
+            
+                    
+                    263 - 丑数（ugly-number） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.65" data-path="268-缺失数字（missing-number）.html">
+            
+                <a href="268-缺失数字（missing-number）.html">
+            
+                    
+                    268 - 缺失数字（missing-number） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.66" data-path="278-第一个错误的版本（first-bad-version）.html">
+            
+                <a href="278-第一个错误的版本（first-bad-version）.html">
+            
+                    
+                    278 - 第一个错误的版本（first-bad-version） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.67" data-path="283-移动零（move-zeroes）.html">
+            
+                <a href="283-移动零（move-zeroes）.html">
+            
+                    
+                    283 - 移动零（move-zeroes） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.68" data-path="290-单词规律（word-pattern）.html">
+            
+                <a href="290-单词规律（word-pattern）.html">
+            
+                    
+                    290 - 单词规律（word-pattern） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.69" data-path="292-Nim游戏（nim-game）.html">
+            
+                <a href="292-Nim游戏（nim-game）.html">
+            
+                    
+                    292 - Nim游戏（nim-game） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.70" data-path="303-区域和检索之数组不可变（range-sum-query-immutable）.html">
+            
+                <a href="303-区域和检索之数组不可变（range-sum-query-immutable）.html">
+            
+                    
+                    303 - 区域和检索之数组不可变（range-sum-query-immutable） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.71" data-path="326-3的幂（power-of-three）.html">
+            
+                <a href="326-3的幂（power-of-three）.html">
+            
+                    
+                    326 - 3的幂（power-of-three） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.4.1.72" data-path="342-4的幂（power-of-four）.html">
+            
+                <a href="342-4的幂（power-of-four）.html">
+            
+                    
+                    342 - 4的幂（power-of-four） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.73" data-path="344-反转字符串（reverse-string）.html">
+            
+                <a href="344-反转字符串（reverse-string）.html">
+            
+                    
+                    344 - 反转字符串（reverse-string） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.74" data-path="345-反转字符串中的元音字母（reverse-vowels-of-a-string）.html">
+            
+                <a href="345-反转字符串中的元音字母（reverse-vowels-of-a-string）.html">
+            
+                    
+                    345 - 反转字符串中的元音字母（reverse-vowels-of-a-string） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.75" data-path="349-两个数组的交集（intersection-of-two-arrays）.html">
+            
+                <a href="349-两个数组的交集（intersection-of-two-arrays）.html">
+            
+                    
+                    349 - 两个数组的交集（intersection-of-two-arrays） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.76" data-path="350-两个数组的交集II（intersection-of-two-arrays-ii）.html">
+            
+                <a href="350-两个数组的交集II（intersection-of-two-arrays-ii）.html">
+            
+                    
+                    350 - 两个数组的交集II（intersection-of-two-arrays-ii） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.77" data-path="367-有效的完全平方数（valid-perfect-square）.html">
+            
+                <a href="367-有效的完全平方数（valid-perfect-square）.html">
+            
+                    
+                    367 - 有效的完全平方数（valid-perfect-square） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.78" data-path="371-两整数之和（sum-of-two-integers）.html">
+            
+                <a href="371-两整数之和（sum-of-two-integers）.html">
+            
+                    
+                    371 - 两整数之和（sum-of-two-integers） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.79" data-path="383-赎金信（ransom-note）.html">
+            
+                <a href="383-赎金信（ransom-note）.html">
+            
+                    
+                    383 - 赎金信（ransom-note） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.80" data-path="387-字符串中的第一个唯一字符（first-unique-character-in-a-string）.html">
+            
+                <a href="387-字符串中的第一个唯一字符（first-unique-character-in-a-string）.html">
+            
+                    
+                    387 - 字符串中的第一个唯一字符（first-unique-character-in-a-string） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.81" data-path="389-找不同（find-the-difference）.html">
+            
+                <a href="389-找不同（find-the-difference）.html">
+            
+                    
+                    389 - 找不同（find-the-difference） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.82" data-path="400-第N个数字（nth-digit）.html">
+            
+                <a href="400-第N个数字（nth-digit）.html">
+            
+                    
+                    400 - 第N个数字（nth-digit） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.83" data-path="401-二进制手表（binary-watch）.html">
+            
+                <a href="401-二进制手表（binary-watch）.html">
+            
+                    
+                    401 - 二进制手表（binary-watch） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.84" data-path="404-左叶子之和（sum-of-left-leaves）.html">
+            
+                <a href="404-左叶子之和（sum-of-left-leaves）.html">
+            
+                    
+                    404 - 左叶子之和（sum-of-left-leaves） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.85" data-path="405-数字转换为十六进制（convert-a-number-to-hexadecimal）.html">
+            
+                <a href="405-数字转换为十六进制（convert-a-number-to-hexadecimal）.html">
+            
+                    
+                    405 - 数字转换为十六进制（convert-a-number-to-hexadecimal） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.86" data-path="409-最长回文串（longest-palindrome）.html">
+            
+                <a href="409-最长回文串（longest-palindrome）.html">
+            
+                    
+                    409 - 最长回文串（longest-palindrome） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.87" data-path="412-FizzBuzz（fizz-buzz）.html">
+            
+                <a href="412-FizzBuzz（fizz-buzz）.html">
+            
+                    
+                    412 - FizzBuzz（fizz-buzz） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.88" data-path="414-第三大的数（third-maximum-number）.html">
+            
+                <a href="414-第三大的数（third-maximum-number）.html">
+            
+                    
+                    414 - 第三大的数（third-maximum-number） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.89" data-path="415-字符串相加（add-strings）.html">
+            
+                <a href="415-字符串相加（add-strings）.html">
+            
+                    
+                    415 - 字符串相加（add-strings） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.90" data-path="429-n叉树的层序遍历（n-ary-tree-level-order-traversal）.html">
+            
+                <a href="429-n叉树的层序遍历（n-ary-tree-level-order-traversal）.html">
+            
+                    
+                    429 - n叉树的层序遍历（n-ary-tree-level-order-traversal） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.91" data-path="434-字符串中的单词数（number-of-segments-in-a-string）.html">
+            
+                <a href="434-字符串中的单词数（number-of-segments-in-a-string）.html">
+            
+                    
+                    434 - 字符串中的单词数（number-of-segments-in-a-string） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.92" data-path="437-路径总和III（path-sum-iii）.html">
+            
+                <a href="437-路径总和III（path-sum-iii）.html">
+            
+                    
+                    437 - 路径总和III（path-sum-iii） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.93" data-path="438-找到字符串中所有字母异位词（find-all-anagrams-in-a-string）.html">
+            
+                <a href="438-找到字符串中所有字母异位词（find-all-anagrams-in-a-string）.html">
+            
+                    
+                    438 - 找到字符串中所有字母异位词（find-all-anagrams-in-a-string） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.94" data-path="441-排列硬币（arranging-coins）.html">
+            
+                <a href="441-排列硬币（arranging-coins）.html">
+            
+                    
+                    441 - 排列硬币（arranging-coins） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.95" data-path="443-压缩字符串（string-compression）.html">
+            
+                <a href="443-压缩字符串（string-compression）.html">
+            
+                    
+                    443 - 压缩字符串（string-compression） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.96" data-path="447-回旋镖的数量（number-of-boomerangs）.html">
+            
+                <a href="447-回旋镖的数量（number-of-boomerangs）.html">
+            
+                    
+                    447 - 回旋镖的数量（number-of-boomerangs） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.97" data-path="448-找出所有数组中消失的数字（find-all-numbers-disappeared-in-an-array）.html">
+            
+                <a href="448-找出所有数组中消失的数字（find-all-numbers-disappeared-in-an-array）.html">
+            
+                    
+                    448 - 找出所有数组中消失的数字（find-all-numbers-disappeared-in-an-array） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.98" data-path="453-最小移动次数使数组元素相等（minimum-moves-to-equal-array-elements）.html">
+            
+                <a href="453-最小移动次数使数组元素相等（minimum-moves-to-equal-array-elements）.html">
+            
+                    
+                    453 - 最小移动次数使数组元素相等（minimum-moves-to-equal-array-elements） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.99" data-path="455-分发饼干（assign-cookies）.html">
+            
+                <a href="455-分发饼干（assign-cookies）.html">
+            
+                    
+                    455 - 分发饼干（assign-cookies） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.1.100" data-path="459-重复的字符串（repeated-substring-pattern）.html">
+            
+                <a href="459-重复的字符串（repeated-substring-pattern）.html">
+            
+                    
+                    459 - 重复的字符串（repeated-substring-pattern） ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.2" data-path="../medium/">
+            
+                <a href="../medium/">
+            
+                    
+                    LeetCode - 中等模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.3" data-path="../hard/">
+            
+                <a href="../hard/">
+            
+                    
+                    LeetCode - 困难模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../../Markdown-Websites/">
+            
+                <a href="../../Markdown-Websites/">
+            
+                    
+                    Markdown 建站
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.5.1" data-path="../../Markdown-Websites/Markdown/">
+            
+                <a href="../../Markdown-Websites/Markdown/">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.5.1.1" data-path="../../Markdown-Websites/Markdown/Markdown-study.html">
+            
+                <a href="../../Markdown-Websites/Markdown/Markdown-study.html">
+            
+                    
+                    Markdown 学习 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.2" data-path="../../Markdown-Websites/GitHub-Pages/">
+            
+                <a href="../../Markdown-Websites/GitHub-Pages/">
+            
+                    
+                    GitHub Pages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.5.2.1" data-path="../../Markdown-Websites/GitHub-Pages/GitHub-Pages-study.html">
+            
+                <a href="../../Markdown-Websites/GitHub-Pages/GitHub-Pages-study.html">
+            
+                    
+                    GitHub Pages 学习 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.3" data-path="../../Markdown-Websites/VuePress/">
+            
+                <a href="../../Markdown-Websites/VuePress/">
+            
+                    
+                    VuePress
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.5.3.1" data-path="../../Markdown-Websites/VuePress/VuePress-study.html">
+            
+                <a href="../../Markdown-Websites/VuePress/VuePress-study.html">
+            
+                    
+                    VuePress 学习 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.4" data-path="../../Markdown-Websites/GitBook/">
+            
+                <a href="../../Markdown-Websites/GitBook/">
+            
+                    
+                    GitBook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.5.4.1" data-path="../../Markdown-Websites/GitBook/GitBook-study.html">
+            
+                <a href="../../Markdown-Websites/GitBook/GitBook-study.html">
+            
+                    
+                    GitBook 搭建 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.4.2" data-path="../../Markdown-Websites/GitBook/GitBook-question.html">
+            
+                <a href="../../Markdown-Websites/GitBook/GitBook-question.html">
+            
+                    
+                    GitBook 开发问题记录 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../../Monologue/">
+            
+                <a href="../../Monologue/">
+            
+                    
+                    独角戏
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.6.1" data-path="../../Monologue/GitHub-competition.html">
+            
+                <a href="../../Monologue/GitHub-competition.html">
+            
+                    
+                    暴走前端 - GitHub 竞赛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.2" data-path="../../Monologue/the-art-of-questioning.html">
+            
+                <a href="../../Monologue/the-art-of-questioning.html">
+            
+                    
+                    提问的艺术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.3" data-path="../../Monologue/稳食艰难.html">
+            
+                <a href="../../Monologue/稳食艰难.html">
+            
+                    
+                    稳食艰难 - 云服务器推广
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.4" data-path="../../Monologue/morning-and-evening/">
+            
+                <a href="../../Monologue/morning-and-evening/">
+            
+                    
+                    朝花夕拾
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.6.4.1" data-path="../../Monologue/morning-and-evening/2019-06-17.html">
+            
+                <a href="../../Monologue/morning-and-evening/2019-06-17.html">
+            
+                    
+                    朝花夕拾 - 分手 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.4.2" data-path="../../Monologue/morning-and-evening/2019-05-31.html">
+            
+                <a href="../../Monologue/morning-and-evening/2019-05-31.html">
+            
+                    
+                    朝花夕拾 - 变更 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.4.3" data-path="../../Monologue/morning-and-evening/2019-04-29.html">
+            
+                <a href="../../Monologue/morning-and-evening/2019-04-29.html">
+            
+                    
+                    朝花夕拾 - 工作与生活 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.4.4" data-path="../../Monologue/morning-and-evening/2019-04-05.html">
+            
+                <a href="../../Monologue/morning-and-evening/2019-04-05.html">
+            
+                    
+                    朝花夕拾 - 生日 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.4.5" data-path="../../Monologue/morning-and-evening/2019-03-31.html">
+            
+                <a href="../../Monologue/morning-and-evening/2019-03-31.html">
+            
+                    
+                    朝花夕拾 - 徒步 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.4.6" data-path="../../Monologue/morning-and-evening/2019-03-22.html">
+            
+                <a href="../../Monologue/morning-and-evening/2019-03-22.html">
+            
+                    
+                    朝花夕拾 - 搬家 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.5" data-path="../../Monologue/logs/">
+            
+                <a href="../../Monologue/logs/">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.6.5.1" data-path="../../Monologue/logs/2019-06.html">
+            
+                <a href="../../Monologue/logs/2019-06.html">
+            
+                    
+                    日志 - 2019-06 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.5.2" data-path="../../Monologue/logs/2019-05.html">
+            
+                <a href="../../Monologue/logs/2019-05.html">
+            
+                    
+                    日志 - 2019-05 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.5.3" data-path="../../Monologue/logs/2019-04.html">
+            
+                <a href="../../Monologue/logs/2019-04.html">
+            
+                    
+                    日志 - 2019-04 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.5.4" data-path="../../Monologue/logs/2018-11.html">
+            
+                <a href="../../Monologue/logs/2018-11.html">
+            
+                    
+                    日志 - 2018-11 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../../Node/">
+            
+                <a href="../../Node/">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.7.1" data-path="../../Node/Koa.html">
+            
+                <a href="../../Node/Koa.html">
+            
+                    
+                    Koa ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7.2" data-path="../../Node/Node-base.html">
+            
+                <a href="../../Node/Node-base.html">
+            
+                    
+                    Node 基础 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7.3" data-path="../../Node/build-web-station.html">
+            
+                <a href="../../Node/build-web-station.html">
+            
+                    
+                    云服务器建站 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../../npm/">
+            
+                <a href="../../npm/">
+            
+                    
+                    npm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.8.1" data-path="../../npm/npm-study.html">
+            
+                <a href="../../npm/npm-study.html">
+            
+                    
+                    npm 学习 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../../regular-expression/">
+            
+                <a href="../../regular-expression/">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.9.1" data-path="../../regular-expression/regular-expression-study.html">
+            
+                <a href="../../regular-expression/regular-expression-study.html">
+            
+                    
+                    正则表达式学习 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../../short-article-library/">
+            
+                <a href="../../short-article-library/">
+            
+                    
+                    短杂文
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.10.1" data-path="../../short-article-library/agreement/">
+            
+                <a href="../../short-article-library/agreement/">
+            
+                    
+                    关于协议 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.2" data-path="../../short-article-library/front-end/">
+            
+                <a href="../../short-article-library/front-end/">
+            
+                    
+                    前端 ✔
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.10.2.1" data-path="../../short-article-library/front-end/front-end-2018-11.html">
+            
+                <a href="../../short-article-library/front-end/front-end-2018-11.html">
+            
+                    
+                    前端 - 2018 前端开发分享 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.2.2" data-path="../../short-article-library/front-end/front-end-solution.html">
+            
+                <a href="../../short-article-library/front-end/front-end-solution.html">
+            
+                    
+                    前端 - 前端解疑 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.2.3" data-path="../../short-article-library/front-end/front-end-understand.html">
+            
+                <a href="../../short-article-library/front-end/front-end-understand.html">
+            
+                    
+                    前端 - 浅谈个人对前端历史的理解 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.3" data-path="../../short-article-library/Java-about/">
+            
+                <a href="../../short-article-library/Java-about/">
+            
+                    
+                    Java ✔
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.10.3.1" data-path="../../short-article-library/Java-about/JSP/">
+            
+                <a href="../../short-article-library/Java-about/JSP/">
+            
+                    
+                    JSP ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.3.2" data-path="../../short-article-library/Java-about/JSTL/">
+            
+                <a href="../../short-article-library/Java-about/JSTL/">
+            
+                    
+                    JSTL ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.4" data-path="../../short-article-library/old-web-article/">
+            
+                <a href="../../short-article-library/old-web-article/">
+            
+                    
+                    旧网站 - ThinkPHP 建站的文章 ✔
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.10.4.1" data-path="../../short-article-library/old-web-article/01.html">
+            
+                <a href="../../short-article-library/old-web-article/01.html">
+            
+                    
+                    01 - 整站感言 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.4.2" data-path="../../short-article-library/old-web-article/02.html">
+            
+                <a href="../../short-article-library/old-web-article/02.html">
+            
+                    
+                    02 - 基于 ThinkPHP 和 bootstrap 的整站开发 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.4.3" data-path="../../short-article-library/old-web-article/03.html">
+            
+                <a href="../../short-article-library/old-web-article/03.html">
+            
+                    
+                    03 - HTML + CSS + JavaScript 基础学习 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.4.4" data-path="../../short-article-library/old-web-article/04.html">
+            
+                <a href="../../short-article-library/old-web-article/04.html">
+            
+                    
+                    04 - PHP 基础学习 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.4.5" data-path="../../short-article-library/old-web-article/05.html">
+            
+                <a href="../../short-article-library/old-web-article/05.html">
+            
+                    
+                    05 - Bootstrap 学习 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.4.6" data-path="../../short-article-library/old-web-article/06.html">
+            
+                <a href="../../short-article-library/old-web-article/06.html">
+            
+                    
+                    06 - ThinkPHP 学习 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.4.7" data-path="../../short-article-library/old-web-article/07.html">
+            
+                <a href="../../short-article-library/old-web-article/07.html">
+            
+                    
+                    07 - MySQL 学习 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.4.8" data-path="../../short-article-library/old-web-article/08.html">
+            
+                <a href="../../short-article-library/old-web-article/08.html">
+            
+                    
+                    08 - 下一站：vue ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.4.9" data-path="../../short-article-library/old-web-article/09.html">
+            
+                <a href="../../short-article-library/old-web-article/09.html">
+            
+                    
+                    09 - 心有所动，路有所行 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.4.10" data-path="../../short-article-library/old-web-article/10.html">
+            
+                <a href="../../short-article-library/old-web-article/10.html">
+            
+                    
+                    10 - Vue 第一站：从安装到打包 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.4.11" data-path="../../short-article-library/old-web-article/11.html">
+            
+                <a href="../../short-article-library/old-web-article/11.html">
+            
+                    
+                    11 - 给自己留一份感动 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.4.12" data-path="../../short-article-library/old-web-article/12.html">
+            
+                <a href="../../short-article-library/old-web-article/12.html">
+            
+                    
+                    12 - 4 步搞定简易 GIF 图 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.4.13" data-path="../../short-article-library/old-web-article/13.html">
+            
+                <a href="../../short-article-library/old-web-article/13.html">
+            
+                    
+                    13 - 菜鸟：世界太大，给自己留 50G 空间 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.4.14" data-path="../../short-article-library/old-web-article/14.html">
+            
+                <a href="../../short-article-library/old-web-article/14.html">
+            
+                    
+                    14 - 5 月心得 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.4.15" data-path="../../short-article-library/old-web-article/15.html">
+            
+                <a href="../../short-article-library/old-web-article/15.html">
+            
+                    
+                    15 - pug 模板引擎 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.4.16" data-path="../../short-article-library/old-web-article/16.html">
+            
+                <a href="../../short-article-library/old-web-article/16.html">
+            
+                    
+                    16 - 2017年10月10日 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.4.17" data-path="../../short-article-library/old-web-article/17.html">
+            
+                <a href="../../short-article-library/old-web-article/17.html">
+            
+                    
+                    17 - gulpUncss 清除样式 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.4.18" data-path="../../short-article-library/old-web-article/18.html">
+            
+                <a href="../../short-article-library/old-web-article/18.html">
+            
+                    
+                    18 - Vue 基础 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10.5" data-path="../../short-article-library/Visual-Studio-Code/">
+            
+                <a href="../../short-article-library/Visual-Studio-Code/">
+            
+                    
+                    VSCode 常用操作和配置 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11" data-path="../../SQL/">
+            
+                <a href="../../SQL/">
+            
+                    
+                    SQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.11.1" data-path="../../SQL/MySQL-install.html">
+            
+                <a href="../../SQL/MySQL-install.html">
+            
+                    
+                    MySQL 安装 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11.2" data-path="../../SQL/MySQL-study.html">
+            
+                <a href="../../SQL/MySQL-study.html">
+            
+                    
+                    MySQL 学习 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12" data-path="../../Website/">
+            
+                <a href="../../Website/">
+            
+                    
+                    网站
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.12.1" data-path="../../Website/Shopping-Mall.html">
+            
+                <a href="../../Website/Shopping-Mall.html">
+            
+                    
+                    Vue + Koa2 + MongoDB 搭建商城 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.13" data-path="../../WeChat-applet/">
+            
+                <a href="../../WeChat-applet/">
+            
+                    
+                    微信小程序
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.13.1" data-path="../../WeChat-applet/WeChat-applet-development-process.html">
+            
+                <a href="../../WeChat-applet/WeChat-applet-development-process.html">
+            
+                    
+                    微信小程序开发流程 ✘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.13.2" data-path="../../WeChat-applet/WeChat-applet-bug-lists.html">
+            
+                <a href="../../WeChat-applet/WeChat-applet-bug-lists.html">
+            
+                    
+                    微信小程序 bug 集中营 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.13.3" data-path="../../WeChat-applet/WeChat-applet-function-list.html">
+            
+                <a href="../../WeChat-applet/WeChat-applet-function-list.html">
+            
+                    
+                    微信小程序之奇技淫巧 ✔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >342 - 4的幂（power-of-four） ✔</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#342---4&#x7684;&#x5E42;&#xFF08;power-of-four&#xFF09;"><b></b>342 - 4&#x7684;&#x5E42;&#xFF08;power-of-four&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4E00;-&#x76EE;&#x5F55;"><b></b>&#x4E00; &#x76EE;&#x5F55;</a></li><li><span class="title-icon "></span><a href="#&#x4E8C;-&#x524D;&#x8A00;"><b></b>&#x4E8C; &#x524D;&#x8A00;</a></li><li><span class="title-icon "></span><a href="#&#x4E09;-&#x89E3;&#x9898;"><b></b>&#x4E09; &#x89E3;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x56DB;-&#x6267;&#x884C;&#x6D4B;&#x8BD5;"><b></b>&#x56DB; &#x6267;&#x884C;&#x6D4B;&#x8BD5;</a></li><li><span class="title-icon "></span><a href="#&#x4E94;-leetcode-submit"><b></b>&#x4E94; LeetCode Submit</a></li><li><span class="title-icon "></span><a href="#&#x516D;-&#x89E3;&#x9898;&#x601D;&#x8DEF;"><b></b>&#x516D; &#x89E3;&#x9898;&#x601D;&#x8DEF;</a></li></ul></ul></div><a href="#342---4&#x7684;&#x5E42;&#xFF08;power-of-four&#xFF09;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="342---4&#x7684;&#x5E42;&#xFF08;power-of-four&#xFF09;"><a name="342---4&#x7684;&#x5E42;&#xFF08;power-of-four&#xFF09;" class="anchor-navigation-ex-anchor" href="#342---4&#x7684;&#x5E42;&#xFF08;power-of-four&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>342 - 4&#x7684;&#x5E42;&#xFF08;power-of-four&#xFF09;</h1>
+<blockquote>
+<p>Create by <strong>jsliang</strong> on <strong>2019-07-22 18:43:57</strong><br>Recently revised in <strong>2019-07-22 18:55:02</strong></p>
+</blockquote>
+<h2 id="&#x4E00;-&#x76EE;&#x5F55;"><a name="&#x4E00;-&#x76EE;&#x5F55;" class="anchor-navigation-ex-anchor" href="#&#x4E00;-&#x76EE;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-one" id="chapter-one">&#x4E00; &#x76EE;&#x5F55;</a></h2>
+<p><strong>&#x4E0D;&#x6298;&#x817E;&#x7684;&#x524D;&#x7AEF;&#xFF0C;&#x548C;&#x54B8;&#x9C7C;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x76EE;&#x5F55;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#chapter-one">&#x4E00; &#x76EE;&#x5F55;</a></td>
+</tr>
+<tr>
+<td><a name="catalog-chapter-two" id="catalog-chapter-two"></a><a href="#chapter-two">&#x4E8C; &#x524D;&#x8A00;</a></td>
+</tr>
+<tr>
+<td><a name="catalog-chapter-three" id="catalog-chapter-three"></a><a href="#chapter-three">&#x4E09; &#x89E3;&#x9898;</a></td>
+</tr>
+<tr>
+<td><a name="catalog-chapter-four" id="catalog-chapter-four"></a><a href="#chapter-four">&#x56DB; &#x6267;&#x884C;&#x6D4B;&#x8BD5;</a></td>
+</tr>
+<tr>
+<td><a name="catalog-chapter-five" id="catalog-chapter-five"></a><a href="#chapter-five">&#x4E94; LeetCode Submit</a></td>
+</tr>
+<tr>
+<td><a name="catalog-chapter-six" id="catalog-chapter-six"></a><a href="#chapter-six">&#x516D; &#x89E3;&#x9898;&#x601D;&#x8DEF;</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x4E8C;-&#x524D;&#x8A00;"><a name="&#x4E8C;-&#x524D;&#x8A00;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;-&#x524D;&#x8A00;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-two" id="chapter-two">&#x4E8C; &#x524D;&#x8A00;</a></h2>
+<blockquote>
+<p><a href="#chapter-one">&#x8FD4;&#x56DE;&#x76EE;&#x5F55;</a></p>
+</blockquote>
+<ul>
+<li><strong>&#x96BE;&#x5EA6;</strong>&#xFF1A;&#x7B80;&#x5355;</li>
+<li><strong>&#x6D89;&#x53CA;&#x77E5;&#x8BC6;</strong>&#xFF1A;&#x4F4D;&#x8FD0;&#x7B97;</li>
+<li><strong>&#x9898;&#x76EE;&#x5730;&#x5740;</strong>&#xFF1A;<a href="https://leetcode.com/problems/power-of-four/" target="_blank">https://leetcode.com/problems/power-of-four/</a></li>
+<li><strong>&#x9898;&#x76EE;&#x5185;&#x5BB9;</strong>&#xFF1A;</li>
+</ul>
+<pre class="language-"><code>Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
+
+Example 1:
+Input: 16
+Output: true
+
+Example 2:
+Input: 5
+Output: false
+
+Follow up: Could you solve it without loops/recursion?
+</code></pre><h2 id="&#x4E09;-&#x89E3;&#x9898;"><a name="&#x4E09;-&#x89E3;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x4E09;-&#x89E3;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-three" id="chapter-three">&#x4E09; &#x89E3;&#x9898;</a></h2>
+<blockquote>
+<p><a href="#chapter-one">&#x8FD4;&#x56DE;&#x76EE;&#x5F55;</a></p>
+</blockquote>
+<p>&#x5C0F;&#x4F19;&#x4F34;&#x53EF;&#x4EE5;&#x5148;&#x81EA;&#x5DF1;&#x5728;&#x672C;&#x5730;&#x5C1D;&#x8BD5;&#x89E3;&#x9898;&#xFF0C;&#x518D;&#x56DE;&#x6765;&#x770B;&#x770B; <strong>jsliang</strong> &#x7684;&#x89E3;&#x9898;&#x601D;&#x8DEF;&#x3002;</p>
+<ul>
+<li><strong>&#x89E3;&#x9898;&#x4EE3;&#x7801;</strong>&#xFF1A;</li>
+</ul>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> <span class="token function-variable function">isPowerOfFour</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>num <span class="token operator">&gt;</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    num <span class="token operator">=</span> num <span class="token operator">/</span> <span class="token number">4</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">===</span> <span class="token number">4</span> <span class="token operator">||</span> num <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="&#x56DB;-&#x6267;&#x884C;&#x6D4B;&#x8BD5;"><a name="&#x56DB;-&#x6267;&#x884C;&#x6D4B;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#&#x56DB;-&#x6267;&#x884C;&#x6D4B;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-four" id="chapter-four">&#x56DB; &#x6267;&#x884C;&#x6D4B;&#x8BD5;</a></h2>
+<blockquote>
+<p><a href="#chapter-one">&#x8FD4;&#x56DE;&#x76EE;&#x5F55;</a></p>
+</blockquote>
+<ol>
+<li><code>num</code>&#xFF1A;<code>64</code></li>
+<li><code>return</code>&#xFF1A;</li>
+</ol>
+<pre class="language-"><code class="lang-js"><span class="token boolean">true</span>
+</code></pre>
+<h2 id="&#x4E94;-leetcode-submit"><a name="&#x4E94;-leetcode-submit" class="anchor-navigation-ex-anchor" href="#&#x4E94;-leetcode-submit"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-five" id="chapter-five">&#x4E94; LeetCode Submit</a></h2>
+<blockquote>
+<p><a href="#chapter-one">&#x8FD4;&#x56DE;&#x76EE;&#x5F55;</a></p>
+</blockquote>
+<pre class="language-"><code class="lang-js">Success
+Runtime<span class="token punctuation">:</span> <span class="token number">72</span> ms<span class="token punctuation">,</span> faster than <span class="token number">68.45</span><span class="token operator">%</span> <span class="token keyword">of</span> JavaScript online submissions <span class="token keyword">for</span> Power <span class="token keyword">of</span> Four<span class="token punctuation">.</span>
+Memory Usage<span class="token punctuation">:</span> <span class="token number">35.5</span> <span class="token constant">MB</span><span class="token punctuation">,</span> less than <span class="token number">98.97</span><span class="token operator">%</span> <span class="token keyword">of</span> JavaScript online submissions <span class="token keyword">for</span> Power <span class="token keyword">of</span> Four<span class="token punctuation">.</span>
+</code></pre>
+<h2 id="&#x516D;-&#x89E3;&#x9898;&#x601D;&#x8DEF;"><a name="&#x516D;-&#x89E3;&#x9898;&#x601D;&#x8DEF;" class="anchor-navigation-ex-anchor" href="#&#x516D;-&#x89E3;&#x9898;&#x601D;&#x8DEF;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="chapter-six" id="chapter-six">&#x516D; &#x89E3;&#x9898;&#x601D;&#x8DEF;</a></h2>
+<blockquote>
+<p><a href="#chapter-one">&#x8FD4;&#x56DE;&#x76EE;&#x5F55;</a></p>
+</blockquote>
+<p><strong>&#x9996;&#x5148;</strong>&#xFF0C;&#x521A;&#x597D;&#x770B;&#x5230; LeetCode &#x5D29;&#x6E83;&#x7684;&#x4E00;&#x5E55;&#xFF0C;&#x6240;&#x4EE5;&#x53BB;&#x82F1;&#x6587;&#x5B98;&#x7F51;&#x627E;&#x9898;&#x505A;&#x4E86;&#x3002;</p>
+<p><strong>&#x7136;&#x540E;</strong>&#xFF0C;&#x8FD9;&#x9053;&#x9898;&#x7684;&#x9898;&#x89E3;&#x8DDF; 231-2&#x7684;&#x5E42; &#x4EE5;&#x53CA; 326-3&#x7684;&#x5E42; &#x91CD;&#x590D;&#x4E86;&#xFF0C;&#x611F;&#x89C9; LeetCode &#x662F;&#x4E0D;&#x662F;&#x6709;&#x70B9;&#x9ED4;&#x9A74;&#x6280;&#x7A77;&#x3002;</p>
+<p><strong>&#x6700;&#x540E;</strong>&#xFF0C;&#x8FD9;&#x9053;&#x9898;&#x7684;&#x9898;&#x89E3;&#x5373;&#x662F;&#x901A;&#x8FC7;&#x5FAA;&#x73AF;&#x5F97;&#x5230;&#x6700;&#x7EC8;&#x6570;&#xFF0C;&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A; 4 &#x6216;&#x8005; 1 &#x5373;&#x53EF;&#x3002;</p>
+<hr>
+<p><strong>&#x4E0D;&#x6298;&#x817E;&#x7684;&#x524D;&#x7AEF;&#xFF0C;&#x548C;&#x54B8;&#x9C7C;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#xFF01;</strong></p>
+<p><img src="../../../public-repertory/img/z-small-wechat-public-address.jpg" alt="&#x56FE;"></p>
+<p><strong>jsliang</strong> &#x4F1A;&#x6BCF;&#x5929;&#x66F4;&#x65B0;&#x4E00;&#x9053; LeetCode &#x9898;&#x89E3;&#xFF0C;&#x4ECE;&#x800C;&#x5E2E;&#x52A9;&#x5C0F;&#x4F19;&#x4F34;&#x4EEC;&#x592F;&#x5B9E;&#x539F;&#x751F; JS &#x57FA;&#x7840;&#xFF0C;&#x4E86;&#x89E3;&#x4E0E;&#x5B66;&#x4E60;&#x7B97;&#x6CD5;&#x4E0E;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3002;</p>
+<p>&#x626B;&#x63CF;&#x4E0A;&#x65B9;&#x4E8C;&#x7EF4;&#x7801;&#xFF0C;&#x5173;&#x6CE8; <strong>jsliang</strong> &#x7684;&#x516C;&#x4F17;&#x53F7;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x4E00;&#x8D77;&#x6298;&#x817E;&#xFF01;</p>
+<blockquote>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="&#x77E5;&#x8BC6;&#x5171;&#x4EAB;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">jsliang &#x7684;&#x6587;&#x6863;&#x5E93;</span> &#x7531; <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/LiangJunrong/document-library" property="cc:attributionName" rel="cc:attributionURL" target="_blank">&#x6881;&#x5CFB;&#x8363;</a> &#x91C7;&#x7528; <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB; &#x7F72;&#x540D;-&#x975E;&#x5546;&#x4E1A;&#x6027;&#x4F7F;&#x7528;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0 &#x56FD;&#x9645; &#x8BB8;&#x53EF;&#x534F;&#x8BAE;</a>&#x8FDB;&#x884C;&#x8BB8;&#x53EF;&#x3002;<br>&#x57FA;&#x4E8E;<a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/LiangJunrong/document-library" rel="dct:source" target="_blank">https://github.com/LiangJunrong/document-library</a>&#x4E0A;&#x7684;&#x4F5C;&#x54C1;&#x521B;&#x4F5C;&#x3002;<br>&#x672C;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;&#x6388;&#x6743;&#x4E4B;&#x5916;&#x7684;&#x4F7F;&#x7528;&#x6743;&#x9650;&#x53EF;&#x4EE5;&#x4ECE; <a xmlns:cc="http://creativecommons.org/ns#" href="https://creativecommons.org/licenses/by-nc-sa/2.5/cn/" rel="cc:morePermissions" target="_blank">https://creativecommons.org/licenses/by-nc-sa/2.5/cn/</a> &#x5904;&#x83B7;&#x5F97;&#x3002; </p>
+</blockquote>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; jsliang.top 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-07-22 18:55:02
+</span></footer>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>var gitalk = new Gitalk({"clientID": "ed83a3545da1ea821c9f", "clientSecret": "1e2517a9549f0bca9dc508fadbbc32aabb7d2c5f", "repo": "document-library", "owner": "LiangJunrong", "admin": ["LiangJunrong"], "id": location.pathname, "distractionFreeMode": false}); gitalk.render("gitalk-container"); </script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="326-3的幂（power-of-three）.html" class="navigation navigation-prev " aria-label="Previous page: 326 - 3的幂（power-of-three） ✔">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="344-反转字符串（reverse-string）.html" class="navigation navigation-next " aria-label="Next page: 344 - 反转字符串（reverse-string） ✔">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"342 - 4的幂（power-of-four） ✔","level":"1.9.4.1.72","depth":4,"next":{"title":"344 - 反转字符串（reverse-string） ✔","level":"1.9.4.1.73","depth":4,"path":"other-library/LeetCode/easy/344-反转字符串（reverse-string）.md","ref":"./other-library/LeetCode/easy/344-反转字符串（reverse-string）.md","articles":[]},"previous":{"title":"326 - 3的幂（power-of-three） ✔","level":"1.9.4.1.71","depth":4,"path":"other-library/LeetCode/easy/326-3的幂（power-of-three）.md","ref":"./other-library/LeetCode/easy/326-3的幂（power-of-three）.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","prism","-highlight","copy-code-button","search-pro","-search","-lunr","expandable-chapters","splitter","-sharing","github-buttons","donate","tbfed-pagefooter","baidu-tongji","anchor-navigation-ex"],"styles":{"website":"./public-repertory/css/gitbook-configure.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy jsliang.top 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"shell":"bash"}},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"55e7dfe47f4dc1c018d4042fdfa62565"},"splitter":{},"search-pro":{},"donate":{"alipay":"https://github.com/LiangJunrong/document-library/blob/master/public-repertory/img/seek-reward.jpg?raw=true","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"https://github.com/LiangJunrong/document-library/blob/master/public-repertory/img/seek-reward.png?raw=true","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"github-buttons":{"buttons":[{"user":"LiangJunrong","repo":"document-library","type":"star","count":true,"size":"small"},{"user":"LiangJunrong","width":"160","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"梁峻荣 - jsliang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"jsliang 的文档库","language":"zh-hans","gitbook":"*","description":"jsliang 的文档库. 里面包含了个人撰写的所有前端文章，例如 Vue、React,、ECharts、微信小程序等……"},"file":{"path":"other-library/LeetCode/easy/342-4的幂（power-of-four）.md","mtime":"2019-07-22T10:55:02.901Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-30T11:09:15.133Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
