@@ -49,9 +49,11 @@ z-index: 0;
   const userinfo = json.userinfo;
   console.log('data: ', userinfo);
 
+  const username = getQuery('username') || 'jsliang';
+
   for (let i = 0; i < userinfo.length; i++) {
     const item = userinfo[i];
-    if (item.username === getQuery('username')) {
+    if (item.username === username) {
       tipsInfo.innerText = item.tipsInfo;
       letterContentTitle.innerText = item.letterContentTitle;
       letterContentMain.innerText = item.letterContentMain;
