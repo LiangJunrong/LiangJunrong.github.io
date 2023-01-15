@@ -44,12 +44,14 @@ z-index: 0;
     return query.get(info);
   };
 
+  // 读取 JSON 数据
   const data = await fetch('./data.json');
   const userinfo = await data.json();
   console.log('data: ', userinfo);
 
   const username = getQuery('username') || 'jsliang';
 
+  // 匹配并渲染数据
   for (let i = 0; i < userinfo.length; i++) {
     const item = userinfo[i];
     if (item.username === username) {
