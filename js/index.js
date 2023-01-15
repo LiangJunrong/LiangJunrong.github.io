@@ -45,8 +45,7 @@ z-index: 0;
   };
 
   const data = await fetch('./data.json');
-  const json = await data.json();
-  const userinfo = json.userinfo;
+  const userinfo = await data.json();
   console.log('data: ', userinfo);
 
   const username = getQuery('username') || 'jsliang';
