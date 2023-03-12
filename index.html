@@ -1,86 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>兔飞猛进</title>
-  <!-- 主体 -->
-  <link rel="stylesheet" href="./css/index.css">
-  <!-- 信封 -->
-  <link rel="stylesheet" href="./css/letter-image.css">
-  <!-- 提示 -->
-  <link rel="stylesheet" href="./css/tips.css">
-  <!-- 信 -->
-  <link rel="stylesheet" href="./css/letter-content.css">
-  <!-- 心 -->
-  <link rel="stylesheet" href="./css/heart.css">
-</head>
-<body>
-  <!-- 容器 - 一封信 -->
-  <div class="a-letter">
-    <!-- 信封 -->
-    <div class="letter-image">
-      <!-- 信封内容容器 -->
-      <div class="letter-image-mail">
-        <!-- 信封长方形底板 - 避免漏出底部白色背景 -->
-        <div class="letter-image-back-fold"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>jsliang 的主页</title>
+    <style>
+      /* 初始化 Start */
+      html, body {
+        margin: 0;
+      }
+      a,
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        color: #fff;
+      }
+      /* 初始化 End */
 
-        <!-- 信件 -->
-        <div class="letter-image-content">
-          <!-- 信件头部小花边 -->
-          <div class="letter-image-content-border"></div>
-          <!-- 信件标题 -->
-          <div class="letter-image-content-title"></div>
-          <!-- 信件内容 -->
-          <div class="letter-image-content-context">点击打开信件</div>
-          <!-- 信件邮戳 -->
-          <div class="letter-image-content-stamp"></div>
-        </div>
+      /* 包含内容 */
+      .container {
+        position: relative;
+        text-align: center;
+        background: linear-gradient(
+          60deg,
+          rgba(84, 58, 183, 1) 0%,
+          rgba(0, 172, 193, 1) 100%
+        );
+        color: white;
+      }
+      .container-inner {
+        height: 65vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .container-list {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .container-list-item {
+        list-style-type: none;
+        line-height: 50px;
+      }
+      .container-list-item span {
+        display: inline-flex;
+        width: 150px;
+        justify-content: flex-end;
+      }
 
-        <!-- 下面 3 个三角形构成一个长方形信封 -->
-        <!-- 上边三角形 -->
-        <div class="letter-image-top-fold"></div>
-        <!-- 左边三角形 -->
-        <div class="letter-image-left-fold"></div>
-        <!-- 右下三角形 -->
-        <div class="letter-image-body"></div>
+      /* SVG 部分 */
+      .waves {
+        position: relative;
+        width: 100%;
+        height: 15vh;
+        margin-bottom: -7px;
+        min-height: 100px;
+        max-height: 150px;
+      }
+      .parallax > use {
+        animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+      }
+      .parallax > use:nth-child(1) {
+        animation-delay: -2s;
+        animation-duration: 7s;
+      }
+      .parallax > use:nth-child(2) {
+        animation-delay: -3s;
+        animation-duration: 10s;
+      }
+      .parallax > use:nth-child(3) {
+        animation-delay: -4s;
+        animation-duration: 13s;
+      }
+      .parallax > use:nth-child(4) {
+        animation-delay: -5s;
+        animation-duration: 20s;
+      }
+      @keyframes move-forever {
+        0% {
+          transform: translate3d(-90px, 0, 0);
+        }
 
-        <!-- 心 -->
-        <div class="heart"></div>
+        100% {
+          transform: translate3d(85px, 0, 0);
+        }
+      }
+      @media (max-width: 768px) {
+        .waves {
+          height: 40px;
+          min-height: 40px;
+        }
+        .container-title {
+          font-size: 36px;
+        }
+        .container-list {
+          font-size: 18px;
+        }
+        .container-list-item {
+          display: flex;
+        }
+        .container-list-item span {
+          width: 120px;
+          flex-shrink: 0;
+        }
+        .container-list-item a {
+          flex-shrink: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container-inner flex">
+        <h1 class="container-title">jsliang 的主页</h1>
+        <h2 class="container-list">
+          <li class="container-list-item">
+            <span>GitHub：</span>
+            <a href="https://github.com/LiangJunrong/document-library" target="_blank">LiangJunrong/document-library</a>
+          </li>
+          <li class="container-list-item">
+            <span>哔哩哔哩：</span>
+            <a href="https://space.bilibili.com/289377747" target="_blank">jsliang95</a>
+          </li>
+          <li class="container-list-item">
+            <span>CSS 实例：</span>
+            <a href="./css-demo/index.html" target="_blank">点击查看</a>
+          </li>
+        </h2>
       </div>
-      <!-- 阴影 -->
-      <div class="letter-image-shadow"></div>
+
+      <!-- 背景 -->
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
     </div>
-
-    <!-- 提示 -->
-    <p class="tips">
-      <span class="tips-info">
-        <!-- TODO: 1、提示 - 用户填充 -->
-      </span>
-      <span class="three-dots">
-        <span class="three-dots-element"></span>
-        <span class="three-dots-element"></span>
-        <span class="three-dots-element"></span>
-      </span>
-    </p>
-
-    <!-- 信 -->
-    <div class="letter-content">
-      <h1 class="letter-content-title">
-        <!-- TODO: 2、标题 - 用户填充 -->
-      </h1>
-      <div class="letter-content-main">
-        <!-- TODO: 2、信件内容 - 用户填充 -->
-      </div>
-      <div class="letter-content-footer">
-        <button class="letter-content-button">
-          <!-- TODO: 3、关闭按钮 - 用户填充 -->
-        </button>
-      </div>      
-    </div>
-  </div>
-
-  <script src="./js/index.js"></script>
-</body>
+  </body>
 </html>

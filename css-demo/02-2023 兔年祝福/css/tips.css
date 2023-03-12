@@ -7,16 +7,14 @@
   border-radius: 8px;
   border: 1px solid deepskyblue;
   color: #000;
-  cursor: pointer;
-
-  /* 关键动画：颜色的改变 */
   transition: color .3s;
+  cursor: pointer;
 }
 .tips:hover {
   color: #fff;
 }
 .tips:hover::before {
-  /* 关键动画 - 从左下 */
+  /* 动画 - 收起从左下开始 */
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -30,7 +28,7 @@
   border-radius: 8px;
   z-index: -1;
   
-  /* 关键动画 - 从右下 */
+  /* 动画 - 展开从右下开始 */
   transition: transform 1s ease;
   transform: scaleX(0);
   transform-origin: bottom right;
